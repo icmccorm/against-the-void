@@ -1,0 +1,121 @@
+Timestamp,Author,Which item is this?,Tools,Types,Interoperation with:,Domain,Why unsafe?,Did they use any of these unsafe operations?,Did they describe an unsafe data structure?,Did they expose an unsafe API?,Did they document pre and postconditions or invariants for safety of unsafe code?,Found a bug?,Issues with Miri,Challenges with bug-finding,Binding generation preferences,"Shifting ground - Did they express uncertainty about Rust's semantics, or describe how they are either changing or unclear?","Did they speak about a stigma against unsafe, or express shame or negative feelings about unsafe code?"
+8/4/23 10:55,author1,1,NA,"Send, Weak Reference (Weak<T>)",NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 10:56,author1,2,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,Yes
+8/4/23 10:57,author1,3,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 11:01,author1,4,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 11:02,author1,5,NA,NA,NA,JIT Compilation,Impossible or no other choice,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,Yes
+8/4/23 11:04,author1,6,NA,Box<T>,NA,N/A,NA,NA,N/A,N/A,N/A,Using Uninitialized Memory,NA,N/A,NA,N/A,N/A
+8/4/23 11:05,author1,7,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 11:07,author1,8,Valgrind,NA,NA,N/A,Unsafe as documentation,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 11:07,author1,9,Miri,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 11:09,author1,10,"Miri, Valgrind, CrabCake",NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,Runtime overhead,N/A,NA,N/A,N/A
+8/4/23 11:10,author1,11,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 11:14,author1,12,NA,NA,NA,N/A,NA,Inline assembly,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 11:16,author1,13,NA,NA,NA,N/A,NA,NA,N/A,N/A,Yes,NA,NA,N/A,NA,N/A,Yes
+8/4/23 11:20,author1,14,Wasmtime,"Box<T>, Rc/Arc<T>",NA,JIT Compilation,"Impossible or no other choice, To increase performance",NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 11:21,author1,15,wasm-bindgen,NA,WASM / JavaScript / TypeScript,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,"Use the results from a binding-generation tool without modification, Write bindings manually",N/A,N/A
+8/4/23 11:23,author1,16,NA,Vec<T>,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 11:24,author1,17,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 11:25,author1,18,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,Use After Free,NA,N/A,NA,N/A,N/A
+8/4/23 11:26,author1,19,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 11:27,author1,20,NA,NA,NA,N/A,NA,Intrinsics,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 11:28,author1,21,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,"Mismatched FFI or Intrinsic Declaration, Incorrect Linking",NA,N/A,NA,N/A,N/A
+8/4/23 14:26,author1,22,NA,NA,"C, Python",N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:27,author1,23,"Miri, Shuttle",NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,Runtime overhead,N/A,NA,N/A,N/A
+8/4/23 14:28,author1,24,Miri,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:28,author1,25,NA,Cell<T>,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:29,author1,26,NA,Rc/Arc<T>,NA,N/A,More ergonomic or easier to use,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:30,author1,27,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:30,author1,28,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,Use the results from a binding-generation tool without modification,N/A,N/A
+8/4/23 14:32,author1,29,NA,NA,NA,N/A,NA,Multiple / cyclic aliasing,Yes,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:34,author1,30,NA,"RefCell<T>, Cell<T>",NA,N/A,To increase performance,Inline assembly,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:34,author1,31,NA,Box<T>,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:36,author1,32,NA,ManuallyDrop<T>,NA,N/A,NA,Instrinsics,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:36,author1,33,NA,NA,"C, C++",N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:37,author1,34,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:38,author1,35,NA,NA,NA,Operating Systems,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:39,author1,36,NA,NA,C,Game Development,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:40,author1,37,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,Undefined Behavior,NA,N/A,NA,N/A,N/A
+8/4/23 14:41,author1,38,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,Yes
+8/4/23 14:41,author1,39,Clippy,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:42,author1,40,NA,NA,NA,N/A,"More ergonomic or easier to use, To increase performance",NA,N/A,Yes,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:43,author1,41,UniFFI,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:43,author1,42,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:45,author1,43,bindgen,NA,C,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:46,author1,44,NA,"UnsafeCell<T>, RefCell<T>, Cell<T>",NA,N/A,To increase performance,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:47,author1,45,NA,NA,"C, C++",Game Development,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:47,author1,46,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:48,author1,47,NA,"UnsafeCell<T>, ManuallyDrop<T>",NA,N/A,To increase performance,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:49,author1,48,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:49,author1,49,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:50,author1,50,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,Yes,N/A
+8/4/23 14:51,author1,51,NA,"Box<T>, Rc/Arc<T>",NA,N/A,NA,NA,Yes,N/A,N/A,NA,NA,N/A,NA,Yes,N/A
+8/4/23 14:51,author1,52,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:52,author1,53,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:55,author1,54,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:56,author1,55,Miri,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:56,author1,56,NA,NA,WASM / JavaScript / TypeScript,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:57,author1,57,NA,NA,NA,N/A,Impossible or no other choice,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:58,author1,58,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 14:59,author1,59,NA,NA,NA,N/A,For fun,Replaced Rust's default allocator with a custom allocator,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/23 15:00,author1,60,NA,"UnsafeCell<T>, Cell<T>, Box<T>, Rc/Arc<T>, Vec<T>",NA,N/A,Impossible or no other choice,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 12:52:55,author2,1,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 12:53:52,author2,2,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,Yes
+8/4/2023 12:55:31,author2,3,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 12:56:30,author2,4,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 12:58:10,author2,5,NA,NA,NA,JIT Compilation,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 13:03:11,author2,6,NA,Box<T>,NA,N/A,NA,Raw allocation in Rust,N/A,N/A,N/A,Using Uninitialized Memory,NA,N/A,NA,N/A,N/A
+8/4/2023 13:16:15,author2,7,NA,NA,NA,N/A,Impossible or no other choice,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,Yes
+8/4/2023 13:37:16,author2,8,Valgrind,NA,NA,N/A,"To increase performance, Unsafe as documentation",NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,Yes
+8/4/2023 13:38:44,author2,9,"Miri, ASAN, UBSAN, TSAN, MSAN",NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 13:39:58,author2,10,CrabCake,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 13:40:46,author2,11,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 13:42:42,author2,12,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 13:46:14,author2,13,NA,NA,NA,N/A,NA,NA,N/A,N/A,Yes,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 13:48:09,author2,14,NA,"Box<T>, Rc/Arc<T>",WASM / JavaScript / TypeScript,JIT Compilation,Impossible or no other choice,Multiple / cyclic aliasing,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 13:50:08,author2,15,wasm-bindgen,NA,WASM / JavaScript / TypeScript,Web Application Development,NA,NA,N/A,N/A,N/A,NA,NA,N/A,"Use the results from a binding-generation tool without modification, Write bindings manually",N/A,N/A
+8/4/2023 13:54:20,author2,16,NA,Vec<T>,NA,N/A,NA,Transmute,N/A,N/A,N/A,"Undefined Behavior, Incorrect Type Casting",NA,N/A,NA,N/A,N/A
+8/4/2023 13:57:05,author2,17,NA,NA,NA,N/A,NA,Pointer arithmetic / integer to pointer conversion,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 13:59:08,author2,18,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,"Undefined Behavior, Use After Free, From-Raw, Wrong Pointer",NA,N/A,NA,N/A,N/A
+8/4/2023 14:00:36,author2,19,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:01:50,author2,20,NA,NA,NA,N/A,NA,Instrinsics,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:03:34,author2,21,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,"Undefined Behavior, Incorrect Linking",NA,N/A,NA,N/A,N/A
+8/4/2023 14:05:20,author2,22,NA,NA,"C, Python, WASM / JavaScript / TypeScript",N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,Write bindings manually,N/A,N/A
+8/4/2023 14:06:17,author2,23,Miri,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,Runtime overhead,N/A,NA,N/A,N/A
+8/4/2023 14:07:44,author2,24,"Miri, ASAN, UBSAN, TSAN, MSAN",NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:08:40,author2,25,NA,LazyCell<T>,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:10:02,author2,26,NA,Rc/Arc<T>,NA,N/A,More ergonomic or easier to use,Transmute,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:11:37,author2,27,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:12:30,author2,28,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,Edit the output of a binding generation tool,N/A,N/A
+8/4/2023 14:13:30,author2,29,NA,NA,NA,N/A,NA,Multiple / cyclic aliasing,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:15:48,author2,30,NA,"RefCell<T>, Cell<T>",WASM / JavaScript / TypeScript,JIT Compilation,Impossible or no other choice,System calls,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:16:34,author2,31,NA,Box<T>,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:18:44,author2,32,NA,ManuallyDrop<T>,NA,N/A,NA,Instrinsics,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:19:59,author2,33,NA,NA,C++,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,Write bindings manually,N/A,N/A
+8/4/2023 14:20:58,author2,34,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:23:06,author2,35,NA,NA,NA,Operating Systems,NA,Transmute,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:23:47,author2,36,NA,NA,C,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:24:41,author2,37,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,Undefined Behavior,NA,N/A,NA,N/A,N/A
+8/4/2023 14:27:20,author2,38,NA,NA,WASM / JavaScript / TypeScript,Web Application Development,"More ergonomic or easier to use, To increase performance",NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,Yes
+8/4/2023 14:28:10,author2,39,Clippy,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:29:57,author2,40,NA,NA,NA,N/A,To increase performance,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:30:56,author2,41,UniFFI,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,Use the results from a binding-generation tool without modification,N/A,N/A
+8/4/2023 14:31:39,author2,42,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:32:50,author2,43,bindgen,NA,C,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,Edit the output of a binding generation tool,N/A,N/A
+8/4/2023 14:34:23,author2,44,NA,"UnsafeCell<T>, RefCell<T>, Cell<T>",NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:35:23,author2,45,NA,NA,"C, C++",Game Development,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:36:04,author2,46,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:37:37,author2,47,NA,"UnsafeCell<T>, ManuallyDrop<T>",NA,N/A,NA,System calls,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:38:47,author2,48,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:40:18,author2,49,NA,NA,NA,N/A,Impossible or no other choice,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:41:17,author2,50,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,Yes,N/A
+8/4/2023 14:42:57,author2,51,NA,"Box<T>, Rc/Arc<T>",NA,N/A,More ergonomic or easier to use,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:43:51,author2,52,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:45:04,author2,53,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:45:45,author2,54,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:47:08,author2,55,Miri,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,Lack of support for a feature or construct,N/A,NA,N/A,N/A
+8/4/2023 14:47:44,author2,56,NA,NA,WASM / JavaScript / TypeScript,Web Application Development,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:48:35,author2,57,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:49:33,author2,58,NA,NA,NA,N/A,NA,NA,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:50:41,author2,59,NA,NA,NA,N/A,NA,Replaced Rust's default allocator with a custom allocator,N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A
+8/4/2023 14:52:31,author2,60,NA,"UnsafeCell<T>, Box<T>, Rc/Arc<T>, Vec<T>",NA,N/A,NA,"Transmute, Multiple / cyclic aliasing",N/A,N/A,N/A,NA,NA,N/A,NA,N/A,N/A

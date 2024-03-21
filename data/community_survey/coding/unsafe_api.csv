@@ -1,0 +1,6 @@
+Code,Response
+Ergonomics,"Some APIs are fundamentally unsafe, eg FFI."
+Ergonomics,"To provide flexibility for niche use cases, expecting most people won't use it.  Strong warnings given and invariants/requirements documented."
+Feature,"To indicate that there are preconditions for calling the API that would, if unfulfilled, result in unexpected behaviour"
+No Other Choice,Interfacing with CUDA requires unsafe function calls and caller device pointers
+No Other Choice,"Maintaining an existing C ABI, and in general, providing FFI APIs"

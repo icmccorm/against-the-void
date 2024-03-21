@@ -1,0 +1,28 @@
+section_id,section
+CQ,Consent
+ELQ,Elligibility
+BQ,Background
+DMQ,Domain
+UFQ,Unsafe Features
+USCQ,UnsafeCell
+CUFQ,Calling Unsafe Functions
+ITQ,Intrinsics
+MDMUQ,ManuallyDrop + MaybeUninit
+BXQ,Box
+WUQ,Why unsafe?
+WUNQ,Why unsafe? - No clear alternative
+WUEQ,Why unsafe? - Ergonomics
+WUPQ,Why unsafe? - Performance
+PVSQ,Performance VS Safety
+LMUQ,Local Minimal Unsafe
+ENQ,Encapsulation
+EUAQ,Encapsulation - Unsafe API
+EUAIQ,Encapsulation - Unsafe API - Invariants
+ESAQ,Encapsulation - Safe API
+FFIBQ,FFI - Background
+FFIMMQ,FFI - Memory Model
+FFIBAQ,FFI - Bindings - Automation
+VQ,Validation
+VMQ,Validation - Miri
+CCQ,Community and Culture
+DQ,Demographics

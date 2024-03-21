@@ -1,0 +1,41 @@
+Timestamp,Author,Which item is this?,Tools,Types,Interoperation with:,Domain,Why unsafe?,Did they use any of these unsafe operations?,Did they describe an unsafe data structure?,Did they expose an unsafe API?,Did they document pre and postconditions or invariants for safety of unsafe code?,Found a bug?,Issues with Miri,Challenges with bug-finding,Binding generation preferences,"Shifting ground - Did they express uncertainty about Rust's semantics or describe how they are either changing or unclear?","Did they speak about a stigma against unsafe or express shame or negative feelings about unsafe code?"
+8/3/2023 11:57:03,author2,1,Miri,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 12:01:58,author2,2,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 12:03:28,author2,3,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 12:04:08,author2,4,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 12:08:52,author2,5,,,,N/A,To circumvent the constraints imposed by Rust's type system,Transmute,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 12:11:34,author2,6,,,,N/A,,Instrinsics,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 12:12:08,author2,7,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 12:13:24,author2,8,"Clippy, Miri",,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 12:14:37,author2,9,,,,N/A,Unsafe as documentation,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 12:15:39,author2,10,,,C,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 12:19:23,author2,11,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 12:21:43,author2,12,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 12:30:37,author2,13,"Valgrind, DHAT",,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 12:36:44,author2,14,,Rc/Arc<T>,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 12:37:47,author2,15,,,,Embedded Systems,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 12:40:19,author2,16,,,,Embedded Systems,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 12:41:41,author2,17,,,,N/A,"Unsafe is more ergonomic easier to use, To increase performance",,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 12:43:21,author2,18,,ManuallyDrop<T>,,N/A,"Unsafe is more ergonomic easier to use",,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 12:43:58,author2,19,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 12:44:51,author2,20,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 13:07:48,author1,1,Miri,,,N/A,,,N/A,N/A,N/A,Undefined Behavior,,N/A,N/A,N/A,N/A
+8/3/2023 13:08:53,author1,2,,,,N/A,"To interact with hardware, the operating system, or other low-level external interfaces",,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 13:09:29,author1,3,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 13:10:01,author1,4,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 13:11:08,author1,5,,,,N/A,,,N/A,N/A,N/A,Incorrect Type Casting,,N/A,N/A,N/A,N/A
+8/3/2023 13:12:06,author1,6,,,,N/A,,Instrinsics,N/A,N/A,N/A,Mismatched Bindings,,N/A,N/A,N/A,N/A
+8/3/2023 13:12:33,author1,7,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 13:13:08,author1,8,"Clippy, Miri",,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 13:13:45,author1,9,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 13:14:36,author1,10,,,C,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 13:15:30,author1,11,,,"C, C++, Java, Python, WASM / JavaScript / TypeScript, Ruby",N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 13:16:08,author1,12,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 13:18:12,author1,13,"DHAT, rust-analyzer",,,N/A,,Replaced Rust's default allocator with a custom allocator,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 13:19:03,author1,14,,Rc/Arc<T>,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 13:19:41,author1,15,"ASAN, MSAN",,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 13:20:15,author1,16,,,,Embedded Systems,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 13:20:58,author1,17,,,,N/A,"Unsafe is more ergonomic easier to use, To increase performance",,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 13:21:48,author1,18,,ManuallyDrop<T>,,N/A,"Unsafe is more ergonomic easier to use",,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 13:22:28,author1,19,,,,Operating Systems,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/3/2023 13:22:59,author1,20,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A

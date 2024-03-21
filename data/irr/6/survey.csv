@@ -1,0 +1,114 @@
+question_title,response_text,disjoint
+Tools,Clippy,0
+Tools,Miri,0
+Tools,ASAN,0
+Tools,UBSAN,0
+Tools,TSAN,0
+Tools,MSAN,0
+Tools,Valgrind,0
+Tools,DHAT,0
+Tools,libfuzzer,0
+Tools,Shuttle,0
+Tools,cargo fuzz,0
+Tools,Loom,0
+Tools,CXX,0
+Tools,bindgen,0
+Tools,cbindgen,0
+Tools,wasm-bindgen,0
+Tools,Emscripten,0
+Tools,PyO3,0
+Tools,Diplomat,0
+Tools,UniFFI,0
+Tools,Crucible,0
+Tools,Kani,0
+Tools,Prusti,0
+Tools,JNA,0
+Tools,Other,0
+Types,LazyCell<T>,0
+Types,UnsafeCell<T>,0
+Types,Layout,0
+Types,MaybeUninit<T>,0
+Types,RefCell<T>,0
+Types,Cell<T>,0
+Types,Box<T>,0
+Types,TrustedLen,0
+Types,ExactLen,0
+Types,Send,0
+Types,Mutex,0
+Types,OnceCell<T>,0
+Types,Pin<T>,0
+Types,RWLock<T>,0
+Types,NonNull<T>,0
+Types,Weak Reference (Weak<T>),0
+Types,Rc/Arc<T>,0
+Types,Sync,0
+Types,Vec<T>,0
+Types,Static Variable,0
+Types,Other,0
+Interoperation with:,C,0
+Interoperation with:,C++,0
+Interoperation with:,Java,0
+Interoperation with:,Python,0
+Interoperation with:,WASM / JavaScript / Typescript,0
+Domain,N/A,1
+Domain,Databases,1
+Domain,Embedded Systems,1
+Domain,JIT Compilation,1
+Domain,Windows/WinAPI,1
+Domain,Web Application Development,1
+Domain,Operating Systems,1
+Domain,Web Browser Development,1
+Domain,Game Development,1
+Domain,Other,1
+Why unsafe?,More ergonomic or easier to use,0
+Why unsafe?,Impossible or no other choice,0
+Why unsafe?,For fun,0
+Why unsafe?,To increase performance,0
+Why unsafe?,Unsafe as documentation,0
+Why unsafe?,Other,0
+Did they use any of these unsafe operations?,Replaced Rust's default allocator with a custom allocator,0
+Did they use any of these unsafe operations?,Raw allocation in Rust,0
+Did they use any of these unsafe operations?,Inline assembly,0
+Did they use any of these unsafe operations?,Instrinsics,0
+Did they use any of these unsafe operations?,System calls,0
+Did they use any of these unsafe operations?,Transmute,0
+Did they use any of these unsafe operations?,Multiple / cyclic aliasing,0
+Did they use any of these unsafe operations?,Other,0
+Did they describe an unsafe data structure?,Yes,1
+Did they describe an unsafe data structure?,N/A,1
+Did they expose an unsafe API?,Yes,1
+Did they expose an unsafe API?,N/A,1
+Did they document pre and postconditions or invariants for safety of unsafe code?,Yes,1
+Did they document pre and postconditions or invariants for safety of unsafe code?,N/A,1
+Found a bug?,Undefined Behavior,0
+Found a bug?,Data Races,0
+Found a bug?,Memory Leak,0
+Found a bug?,Double Free,0
+Found a bug?,Use After Free,0
+Found a bug?,Using Uninitialized Memory,0
+Found a bug?,Mismatched FFI or Intrinsic Declaration,0
+Found a bug?,Incorrect Linking,0
+Found a bug?,Zero-Sized Allocation,0
+Found a bug?,Deallocate Foreign Memory in Rust,0
+Found a bug?,"From-Raw, Wrong Pointer",0
+Found a bug?,Improper Alignment,0
+Found a bug?,Unwinding Across FFI Boundaries,0
+Found a bug?,Incorrect Type Casting,0
+Found a bug?,Excessive Resource Use,0
+Found a bug?,Out of Bounds Access,0
+Found a bug?,Logical Error,0
+Found a bug?,Stacked/Tree Borrows Violation,0
+Found a bug?,Other,0
+Issues with Miri,Lack of support for a feature or construct,0
+Issues with Miri,Tree Borrows/Stacked Borrows incorrectly considers my unsafe to be in violation of Rust’s aliasing model,0
+Issues with Miri,Runtime overhead,0
+Challenges with bug-finding,X missed bug,0
+Challenges with bug-finding,False Positive,0
+Challenges with bug-finding,N/A,0
+Binding generation preferences,Use the results from a binding-generation tool without modification,0
+Binding generation preferences,Write bindings manually,0
+Binding generation preferences,Edit the output of a binding generation tool,0
+"Shifting ground - Did they express uncertainty about Rust's semantics, or describe how they are either changing or unclear?",Yes,1
+"Shifting ground - Did they express uncertainty about Rust's semantics, or describe how they are either changing or unclear?",N/A,1
+"Did they speak about a stigma against unsafe, or express shame or negative feelings about unsafe code?",Yes,1
+"Did they speak about a stigma against unsafe, or express shame or negative feelings about unsafe code?",N/A,1

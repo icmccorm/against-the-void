@@ -1,0 +1,191 @@
+﻿Code,Groundedness,Density,Groups,Number of Groups,Comment,Creator,Creation Date,Modifier,Modification Date
+"""Safe"" API",17,0,Encapsulation,1,A safe encapsulation does not guarantee memory safety—one can be uncertain about whether or not their encapsulation is correct.,Author 1,8/8/23,Author 1,8/8/23
+Allocation & Alignment Bug,6,0,New Bug Categories,1,Related to the requirements of allocators or the alignment of memory,Author 1,9/6/23,Author 1,9/6/23
+Allocation in Rust,11,0,FFI Memory Model,1,Using Rc or Box as a general-purpose allocator,Author 1,8/8/23,Author 1,8/8/23
+Arc<T>/Rc<T>,20,0,Types,1,An atomic or non-atomic reference-counted heap allocation.,Author 1,8/7/23,Author 1,8/7/23
+Architecture Dependent Problem,2,0,Bug Categories,1,"A bug that relates to an architectural dependency. For example, a function works on certain systems, but doesn't on others.",Author 1,8/9/23,Author 1,9/5/23
+As Documentation,4,0,Why unsafe?,1,Whenever unsafe is used to indicate a precondition or postcondition for safety,Author 1,8/6/23,Author 1,9/6/23
+ASAN,6,0,Tools,1,Address Sanitizer,Author 1,9/2/23,Author 1,9/5/23
+Atomic Intrinsics,4,0,Unsafe Features,1,,Author 1,9/2/23,Author 1,9/5/23
+Audience-Dependent Documentation,5,0,Documentation,1,"Choosing to write documentation differently, or at all, depending on the expected audience for it.",Author 1,8/6/23,Author 1,8/7/23
+Audience-specific Reasoning,4,0,Reasoning,1,"Reasoning about code differently, or judging it differently, depending on the audience that will use it.",Author 1,8/10/23,Author 1,8/10/23
+AWS Shuttle,3,0,Tools,1,,Author 1,9/5/23,Author 1,9/5/23
+Becoming the Borrow Checker,6,0,C++ vs. Rust,1,Describing how C++ developers need to reason about memory safety in the same way that the borrow checker does.,Author 1,8/6/23,Author 1,8/7/23
+bindgen,13,0,Tools,1,,Author 1,8/9/23,Author 1,9/3/23
+Bindings are a Fiddly Mess,10,0,FFI Bindings,1,It's difficult to get FFI bindings or FFI encapsulations generated or built correctly without extensive configuration.,Author 1,9/3/23,Author 1,9/3/23
+Bit Packing,1,0,Unsafe Features,1,,Author 2,9/6/23,Author 2,9/6/23
+Boost,1,0,Tools,1,,Author 2,8/23/23,Author 1,9/5/23
+Borrowing or Provenance Bug,7,0,New Bug Categories,1,Violations of stacked and tree borrows semantics.,Author 1,9/6/23,Author 1,9/6/23
+Box<T>,36,0,Types,1,Merged from Box<T> Is Bad and Box<T>,Author 1,8/9/23,Author 1,8/9/23
+Box<T> Bug,3,0,New Bug Categories,1,"Bugs involving misuse of Box. These may be temporal or spatial safety bugs too, but they are categorized here instead of stretching across multiple categories specifically due to some involvement with Box.",Author 1,9/6/23,Author 1,9/6/23
+C++ is Difficult,18,0,C++ vs. Rust,1,Merged from C++ is Hard to Reason About and C++ is Difficult to Use,Author 1,9/1/23,Author 1,9/1/23
+C++ is Easier to Use,2,0,C++ vs. Rust,1,The notion that C++ is easier to use than Rust for a particular task.,Author 1,8/8/23,Author 1,8/9/23
+cbindgen,6,0,Tools,1,,Author 1,8/9/23,Author 1,9/3/23
+Cell<T>,6,0,Types,1,Related to the type Cell<T>,Author 1,8/7/23,Author 1,8/10/23
+Clippy Doesn't Find Bugs,2,0,Clippy,1,Clippy is not useful for finding bugs.,Author 1,8/9/23,Author 1,9/5/23
+Clippy False Positive,2,0,Clippy,1,Clippy reports a false-positive error.,Author 2,8/20/23,Author 1,9/5/23
+Clippy Finds Bugs,1,0,Clippy,1,Clippy can be useful for finding bugs.,Author 1,8/9/23,Author 1,9/5/23
+Clippy for Clean Code,3,0,Clippy,1,Clippy is useful for maintaining high-quality code.,Author 1,8/9/23,Author 1,8/10/23
+Clippy for Learning Rust,4,0,Clippy,1,Clippy is useful for learning Rust or keeping up to date with new language features.,Author 1,8/9/23,Author 1,9/5/23
+Code Smells,6,0,Reasoning,1,A pattern of writing code that's indicative of some larger issue.,Author 1,8/6/23,Author 1,8/8/23
+Compilation & Interpretation,5,0,Domain,1,Related to the implementation of compilers and interpreters for languages and formats that are not Rust.,Author 1,9/6/23,Author 1,9/6/23
+Compiler Eliding Bounds Checks,4,0,Reasoning,1,Writing code in such a way that bounds checks will likely be elided by the compiler.,Author 1,8/8/23,Author 1,8/10/23
+Concurrency Bug,6,0,New Bug Categories,1,Data races and deadlocks.,Author 1,9/6/23,Author 1,9/6/23
+Contract or Invariant,35,0,Reasoning,1,"A particular condition, contract, or invariant that is assumed to hold, or that must hold in order for code to be sound or correct.",Author 1,9/5/23,Author 1,9/5/23
+Crucible,1,0,"Formal Methods, Tools",2,,Author 2,8/29/23,Author 1,10/1/23
+Cruft,2,0,C++ vs. Rust,1,"C++ has too much ""cruft"" that has built up over the years from language extensions.",Author 1,8/9/23,Author 1,9/1/23
+Custom Allocator,6,0,Unsafe Features,1,,Author 1,8/9/23,Author 1,9/5/23
+CXX,5,0,Tools,1,,Author 1,8/9/23,Author 1,9/3/23
+Data Processing & Serialization,7,0,Domain,1,"Any application or library involved with serialization, deserialization, image encoding or decoding, or general-purpose data processing.",Author 1,9/6/23,Author 1,9/6/23
+Data Races,4,0,Bug Categories,1,"When two or more threads access the same data without locking, and at least one of the accesses is writing. (https://docs.oracle.com/cd/E19205-01/820-0619/geojs/index.html)",Author 1,8/6/23,Author 1,8/9/23
+"Data Structures, Primitives, and Operations",6,0,Domain,1,"Merged from Safe Destructuring of Types, Language Level Primitives and Lock-Free Concurrency",Author 1,9/6/23,Author 1,9/6/23
+Databases,4,0,Domain,1,,Author 1,8/9/23,Author 1,8/10/23
+Deadlock,1,0,Bug Categories,1,,Author 2,8/16/23,Author 1,9/5/23
+Deallocate Foreign Memory in Rust,1,0,Bug Categories,1,Deallocating memory in language X that was allocated by language Y,Author 1,8/6/23,Author 1,8/9/23
+Debugger,4,0,Tools,1,Any use or experience with a Rust debugger.,Author 1,8/9/23,Author 1,9/3/23
+Different FFI Memory Model,29,0,FFI Memory Model,1,"The notion that there's an upper bound on safety for Rust codebases that use the FFI, or that it's difficult for people to reason about FFI behavior, requiring a certain amount of trust in correctness of code.",Author 1,8/8/23,Author 1,8/9/23
+Difficult FFI,20,0,FFI Memory Model,1,Using Rust's FFI is difficult in this situation.,Author 1,8/8/23,Author 1,8/9/23
+Difficult to Encapsulate,14,0,Encapsulation,1,"Due to some particular invariant or behavior, this unsafe code is difficult to write a safe encapsulation for.",Author 1,8/8/23,Author 1,8/8/23
+Difficult to introduce,2,0,"Clippy, Miri",2,"Introducing this tool into an existing project is difficult, because there will immediately be bugs and issues to address.",Author 1,8/9/23,Author 1,9/5/23
+Difficulty with Generated APIs,2,0,FFI Bindings,1,An error caused by using the output of a binding or encapsulation generation tool incorrectly,Author 1,8/9/23,Author 1,8/10/23
+Diplomat,4,0,Tools,1,,Author 1,9/5/23,Author 1,9/5/23
+Directionality,7,0,FFI Bindings,1,Discussing the direction of bindings to and from Rust and other languages.,Author 1,9/5/23,Author 1,9/5/23
+Documented Contract or Invariant,14,0,Documentation,1,"Describing how contracts or invariants are communicated to users or consumers of a library, as well as maintainers, through documentation.",Author 1,8/8/23,Author 1,8/29/23
+Double Free,1,0,Bug Categories,1,Freeing memory after it has already been freed.,Author 1,8/6/23,Author 1,8/9/23
+Dynamic Analysis Safety Net,7,0,Validation,1,Compensating for uncertainty about correctness by running dynamic analysis tools.,Author 1,8/7/23,Author 1,9/3/23
+Easier or More Ergonomic,15,0,Why unsafe?,1,"There is a stated or implied choice between using a safe pattern and using an unsafe pattern, but the participant chose the unsafe pattern due to the perception that it was easier to implement or validate.",Author 1,8/6/23,Author 1,8/7/23
+Emscripten,1,0,Tools,1,,Author 1,9/2/23,Author 1,9/5/23
+Engaging with the Rust Community,17,0,Community & Culture,1,"Reaching out to other Rust developers on the Discord, community forums, or any other public site for guidance.",Author 1,9/5/23,Author 1,9/5/23
+Exposing a Safe API,20,0,Encapsulation,1,"This developer attempted to expose an entirely safe API to users, with or without compromises for ergonomics. Essentially, this should represent the community preference for safe APIs being put into action by developers. Any notion of preference held by the Rust community should fit under community and culture, though.",Author 1,9/2/23,Author 1,9/5/23
+Exposing an Unsafe API to Users,9,0,Encapsulation,1,Whenever an unsafe API is exposed to users of a library.,Author 1,8/7/23,Author 1,8/7/23
+"○ Extensive, Non-local Unsafe",7,0,"Encapsulation, Reasoning",2,"Unsafe code that is large in scope, or difficult to reason about without relying on non-local knowledge of the application domain. The opposite of ""Local, Minimal Unsafe.""",Author 1,9/2/23,Author 1,9/3/23
+Fanboyish,4,0,Community & Culture,1,Choosing to use Rust because of a sense of emotional investment in the language and its community.,Author 1,8/8/23,Author 1,9/5/23
+Fearless Concurrency,7,0,Benefits of Rust,1,It is easy to write multithreaded applications in Rust without encountering bugs.,Author 1,8/6/23,Author 1,8/7/23
+Feature Disparity,16,0,C++ vs. Rust,1,An example of how Rust and C++ differ in language features or safety requirements.,Author 1,9/1/23,Author 1,9/5/23
+FFI & Binding Bug,7,0,New Bug Categories,1,Bugs related to foreign function use or incorrect bindings.,Author 1,9/6/23,Author 1,9/6/23
+For Fun,3,0,Why unsafe?,1,Using unsafe as part of a side project; for entertainment.,Author 1,8/6/23,Author 1,8/7/23
+Formal verification,5,0,Validation,1,"Using a formal-methods-based tool, such as Prusti or Kani, to verify that code adheres to a certain property.",Author 2,8/16/23,Author 1,9/3/23
+"From Raw, Wrong Pointer",2,0,Bug Categories,1,Using Box::from_raw or Rc::from_raw or similar methods from a memory container type on a pointer that didn't come from one of these types,Author 1,8/6/23,Author 1,8/9/23
+Fuzzing,8,0,Validation,1,Validating code by fuzzing.,Author 1,8/7/23,Author 1,8/7/23
+Game Development,3,0,Domain,1,Developing a video game using Rust.,Author 1,8/6/23,Author 1,8/7/23
+Generate Bindings From a Subset,5,0,FFI Bindings,1,"Using a subset of your codebase as the source of truth from which to generate bindings using a tool like CXX, bindgen, or cbindgen",Author 1,8/8/23,Author 1,8/10/23
+Generation VS Validation,28,0,FFI Bindings,1,Discussing the benefits or drawbacks of generating foreign bindings versus writing them yourself.,Author 1,8/7/23,Author 1,8/7/23
+Idiomatic FFI Encapsulation,5,0,FFI Bindings,1,Attempting to bind and encapsulate foreign functions from one language in a manner that is idiomatic with other languages.,Author 1,9/2/23,Author 1,9/3/23
+"If it compiles, it works",3,0,Benefits of Rust,1,"The notion that Rust programs work correctly if they compile, with no other required reasoning or bug-finding necessary for soundness.",Author 1,8/9/23,Author 1,8/10/23
+Ignoring Security Issues,1,0,Misc,1,Ignoring potential security vulnerabilities.,Author 1,8/9/23,Author 1,9/5/23
+Improper Alignment,3,0,Bug Categories,1,Accessing memory with incorrect alignment.,Author 1,8/6/23,Author 1,8/9/23
+Incorrect Linking,1,0,Bug Categories,1,A bug related to the interation or behavior of a linker,Author 1,8/6/23,Author 1,8/9/23
+Incorrect Type Casting,1,0,Bug Categories,1,Casting something to a type that's invalid for that data. (likely using transmute),Author 1,8/6/23,Author 1,8/9/23
+Increase Performance,35,0,Why unsafe?,1,The user is choosing to use unsafe because they perceive that it would be more performant than safe code. It does not matter if they actually measured performance or not.,Author 1,8/6/23,Author 1,8/7/23
+Inline Assembly,6,0,Unsafe Features,1,,Author 1,8/10/23,Author 1,9/5/23
+Integer Bounds & Overflow Bugs,2,0,New Bug Categories,1,"Buffer overflow, integer overflow, or off-by-one errors that can't be specifically or easily associated with other categories of pointer errors.",Author 1,9/6/23,Author 1,9/6/23
+Integer Overflow,1,0,Bug Categories,1,,Author 1,9/5/23,Author 1,9/5/23
+Interacting with hardware,14,0,Unsafe Features,1,Merged from Interacting with hardware and Writing directly to registers,Author 1,8/29/23,Author 1,8/29/23
+Intrinsics,4,0,Unsafe Features,1,,Author 1,9/2/23,Author 1,9/5/23
+It's not a problem,16,0,Reasoning,1,Merged from We don't have that problem and Not Unsound in Practice,Author 1,9/5/23,Author 1,9/5/23
+JNA,2,0,Tools,1,,Author 1,8/9/23,Author 1,9/3/23
+Kani,3,0,"Formal Methods, Tools",2,,Author 2,8/16/23,Author 1,10/1/23
+Krabcake,3,0,Tools,1,,Author 2,8/20/23,Author 1,9/5/23
+Layout,4,0,Types,1,Related to the Layout type.,Author 1,9/2/23,Author 1,9/5/23
+Laziness Fights Tooling,3,0,"Experiences with Tooling, Validation",2,This participant chose not to uses development tools because it took too much time to configure them.,Author 1,8/9/23,Author 1,9/5/23
+Leveraging the Borrow Checker,2,0,Encapsulation,1,,Author 1,9/2/23,Author 1,9/5/23
+libfuzzer,2,0,Tools,1,,Author 1,9/5/23,Author 1,9/5/23
+Limitation of Binding Tool,16,0,FFI Bindings,1,"A situation that a binding or encapsulation generation tool can't handle, or a pain point or other issue that occurs when using one.",Author 1,8/10/23,Author 1,8/10/23
+Linking Time Optimization (LTO),2,0,Tools,1,,Author 1,8/9/23,Author 1,9/3/23
+"○ Local, Minimal Unsafe",17,0,"Encapsulation, Reasoning",2,Keeping unsafe local and minimal.,Author 1,8/7/23,Author 1,9/3/23
+Logical Error,8,0,Bug Categories,1,Incorrect behavior according to a specification for an application or API.,Author 1,8/8/23,Author 1,8/8/23
+Low-Level Access,3,0,Benefits of Rust,1,Rust is useful because it provides low-level access to hardware.,Author 1,8/9/23,Author 1,8/10/23
+Macros,5,0,Encapsulation,1,Using a macro to encapsulate unsafe.,Author 1,8/8/23,Author 1,8/8/23
+ManuallyDrop<T>,8,0,Types,1,Related to the type ManuallyDrop<T>,Author 1,8/7/23,Author 1,8/10/23
+Manufacturing,1,0,Domain,1,,Author 1,8/9/23,Author 1,8/10/23
+MaybeUninit<T>,13,0,Types,1,Related to the type MaybeUninit<T>,Author 1,8/7/23,Author 1,8/10/23
+Memory Leak,2,0,New Bug Categories,1,Leaking memory.,Author 1,9/6/23,Author 1,9/6/23
+Memory Leaks,2,0,Bug Categories,1,Forgetting to free memory after it has been allocated.,Author 1,8/6/23,Author 1,8/9/23
+Memory Leaks Aren't an Issue,2,0,Validation,1,It's easy to catch memory leaks using dynamic analysis tools.,Author 1,8/8/23,Author 1,9/5/23
+Memory Safety,12,0,Benefits of Rust,1,Rust's borrow checker provides strong static guarantees of memory safety.,Author 1,8/8/23,Author 1,8/10/23
+Memory Thrashing,0,0,Bug Categories,1,,Author 2,8/26/23,Author 1,9/5/23
+Miri doesn't support this feature,13,0,Miri,1,"Miri doesn't support a particular feature, likely inline assembly or FFI calls.",Author 1,8/6/23,Author 1,8/9/23
+Miri found a bug,3,0,Miri,1,Miri discovered a bug in a codebase.,Author 1,9/5/23,Author 1,9/5/23
+Miri is slow,7,0,Miri,1,Miri's speed prevents it from being effective.,Author 1,8/6/23,Author 1,8/9/23
+Mismatched Bindings or Declarations,4,0,Bug Categories,1,"An FFI binding or intrinsic declaration doesn't quite match the function that's being bound. The signature is wrong in some way, like the arguments are swapped.",Author 1,8/6/23,Author 1,8/9/23
+Missed a Bug,2,0,Experiences with Tooling,1,A bug was missed by a development tool.,Author 1,8/9/23,Author 1,9/5/23
+MSAN,2,0,Tools,1,,Author 1,9/3/23,Author 1,9/5/23
+MSVC,1,0,Tools,1,Microsoft Visual C++,Author 1,8/8/23,Author 1,9/3/23
+Multiple / cyclic aliasing,9,0,Unsafe Features,1,"Having multiple mutable references to the same allocation, or having data structures with a cycle of references.",Author 2,8/10/23,Author 1,9/5/23
+Mutex<T>,4,0,Types,1,Related to the type Mutex<T>,Author 1,8/10/23,Author 1,9/5/23
+Networking & Distributed Systems,3,0,Domain,1,Merged from End to End Messaging and Networking & Distributed Systems,Author 1,9/6/23,Author 1,9/6/23
+No Docs > Incorrect Docs,3,0,Documentation,1,The belief that no documentation is better than incorrect documentation.,Author 1,8/6/23,Author 1,8/7/23
+No Other Choice,50,0,Why unsafe?,1,When there is no safe option or existing encapsulation to accomplish something.,Author 1,9/2/23,Author 1,9/2/23
+No Unsafe,1,0,Misc,1,Writing Rust code without using any unsafe.,Author 1,8/8/23,Author 1,8/9/23
+Off-by-one,1,0,Bug Categories,1,,Author 1,8/10/23,Author 1,9/5/23
+OnceCell<T>,1,0,Types,1,Related to the type OnceCell<T>,Author 1,8/7/23,Author 1,8/10/23
+Opaque Pointer,4,0,FFI Memory Model,1,"Use of an opaque pointer to a C type in Rust, or vice versa.",Author 1,8/9/23,Author 1,8/10/23
+Operating & Embedded Systems,10,0,Domain,1,Merged from Embedded Systems and Operating Systems,Author 1,9/6/23,Author 1,9/6/23
+Option<T>,4,0,Types,1,Related to the type Option<T>,Author 1,8/9/23,Author 1,8/10/23
+Panic Safety,2,0,Reasoning,1,Taking account of panic safety in an application.,Author 1,8/8/23,Author 1,8/10/23
+Performance is Necessary,4,0,,0,,Author 1,9/20/23,Author 1,9/20/23
+Personal Tools & Toy Projects,3,0,Domain,1,Merged from Server-Side Programming and CLI Tools,Author 1,9/6/23,Author 1,9/6/23
+Pin<T>,3,0,Types,1,Related to the type Pin<T>,Author 1,8/9/23,Author 1,9/5/23
+Pointer Arithmetic,8,0,Unsafe Features,1,Calculating a new pointer using integer offsets or subtraction between two pointers.,Author 1,8/9/23,Author 1,9/5/23
+Pointer errors,1,0,Bug Categories,1,,Author 1,9/5/23,Author 1,9/5/23
+Preference for Safety,28,0,Community & Culture,1,Preference for using safe code or APIs unless there's no other option.,Author 1,9/5/23,Author 1,9/5/23
+Printf-Style Debugging,4,0,Validation,1,Using printf statements to debug code,Author 1,8/9/23,Author 1,9/3/23
+Profiling,5,0,Validation,1,Running profiling tools to measure the performance impact of a design decision or change.,Author 1,8/7/23,Author 1,8/7/23
+Prusti,2,0,"Formal Methods, Tools",2,,Author 2,8/16/23,Author 1,10/1/23
+PyO3,3,0,Tools,1,,Author 2,8/23/23,Author 1,9/5/23
+RefCell<T>,10,0,Types,1,Related to the type RefCell<T>,Author 1,8/7/23,Author 1,8/10/23
+Requirements Bug,10,0,New Bug Categories,1,Bugs involving mismatched or unsatisfied functional requirements for a component of an application.,Author 1,9/6/23,Author 1,9/6/23
+Return Pointers,3,0,FFI Memory Model,1,Passing a pointer to uninitialized memory across an FFI boundary with the expectation that it will be initialized upon return.,Author 1,8/9/23,Author 1,9/5/23
+Rewrite it in Rust,4,0,Misc,1,This participant rewrote a legacy codebase in Rust.,Author 1,8/9/23,Author 1,9/5/23
+Running tests through Miri,12,0,Miri,1,"Running the test case of a project through Miri, either as a practice or recommendation.",Author 1,8/9/23,Author 1,9/5/23
+○ Runtime Assertion,10,0,"Encapsulation, Validation",2,Merged from Assertion and Assertion in Encapsulation or API,Author 2,8/29/23,Author 1,9/5/23
+Rust Bindings for a C Library,1,0,Domain,1,,Author 1,8/9/23,Author 1,8/10/23
+Rust Has Great Tooling,3,0,Benefits of Rust,1,Merged from Rust's Tooling is Great and Dependency Management,Author 1,8/9/23,Author 1,9/5/23
+Rust is ergonomic,6,0,Benefits of Rust,1,"Rust code is aesthetically ""cleaner"" or more ergonomic than other languages.",Author 1,9/5/23,Author 1,9/5/23
+Rust Performs Well,8,0,Benefits of Rust,1,Choosing Rust for its performance characteristics.,Author 1,8/7/23,Author 1,8/7/23
+Rust Project Contributor,4,0,Domain,1,Merged from Rust Standard Library and Rust Compiler,Author 1,9/6/23,Author 1,9/6/23
+Rust Rewrite is Incomplete,2,0,Validation,1,Merged from Auditing Dependencies and Feature Incompleteness,Author 1,9/3/23,Author 1,9/5/23
+rust-bindgen,2,0,Tools,1,,Author 2,8/19/23,Author 1,9/5/23
+RwLock<T>,4,0,Types,1,Related to the type RwLock<T>,Author 1,8/10/23,Author 1,8/10/23
+Safe Rust is Safe,3,0,Community & Culture,1,,Author 2,8/23/23,Author 1,9/5/23
+safer-ffi,1,0,Tools,1,,Author 1,9/5/23,Author 1,9/5/23
+Security Vulnerability,1,0,Bug Categories,1,,Author 1,8/10/23,Author 1,9/5/23
+Send,1,0,Types,1,Related to the type Send,Author 1,9/2/23,Author 1,9/5/23
+Shared Experiences,8,0,C++ vs. Rust,1,"A problem, feature, or property that is shared between Rust and C++",Author 1,8/8/23,Author 1,9/5/23
+Shifting Ground,37,0,Community & Culture,1,"Expressing uncertainty about Rust's semantics, or describing how they are either changing or unclear.",Author 1,8/6/23,Author 1,8/6/23
+SIMD Intrinsics,3,0,Unsafe Features,1,,Author 1,8/8/23,Author 1,9/5/23
+Simple FFI,24,0,FFI Memory Model,1,"Having a simple API makes working with foreign code in Rust safer and easier. For example, being given a buffer and a length, or only passing data by raw pointers.",Author 1,8/6/23,Author 1,8/10/23
+Stacked Borrows is too strict,3,0,Miri,1,"Code that ""should"" be defined behavior is considered incorrect by Stacked Borrows.",Author 1,8/9/23,Author 1,9/5/23
+Stacked/Tree Borrows Violation,7,0,Bug Categories,1,,Author 1,8/9/23,Author 1,8/10/23
+Static Variables,6,0,Unsafe Features,1,Merged from Static Variables and Global Variables,Author 1,9/5/23,Author 1,9/5/23
+Stigma Against Unsafe,10,0,Community & Culture,1,"The notion that using unsafe is viewed negatively by the Rust community, or any negative opinion toward unsafe.",Author 1,8/6/23,Author 1,8/6/23
+Sync,1,0,Types,1,Related to the type Sync.,Author 1,9/2/23,Author 1,9/5/23
+System Calls,3,0,Unsafe Features,1,Merged from UEFI System Calls and System Calls,Author 1,9/5/23,Author 1,9/5/23
+Tacit Knowledge,23,0,Reasoning,1,"Justifying a decision based on prior experience, intuition, or assumptions, not by data. This includes choosing to implement something for performance without doing any benchmarking, or justifying use of unsafe due to prior experience writing C++.",Author 1,8/6/23,Author 1,8/7/23
+Temporal Memory Bug,3,0,New Bug Categories,1,Use-after-free errors or use-after-invalidation errors that don't specifically involve stacked or tree borrows semantics.,Author 1,9/6/23,Author 1,9/6/23
+Transmute,12,0,Unsafe Features,1,,Author 1,8/9/23,Author 1,9/5/23
+UBSAN,1,0,Tools,1,,Author 1,9/5/23,Author 1,9/5/23
+Unaware of Tools,2,0,Experiences with Tooling,1,This participant was unaware of a tool's existence.,Author 1,9/2/23,Author 1,9/5/23
+Undefined Behavior,4,0,Bug Categories,1,"Behavior considered undefined by Rust or LLVM, which the compiler can modify during optimization.",Author 1,8/6/23,Author 1,8/9/23
+Uniffi,2,0,Tools,1,,Author 1,9/2/23,Author 1,9/5/23
+Uninitialized memory,2,0,"New Bug Categories, Unsafe Features",2,Using memory that is uninitialized.,Author 2,8/28/23,Author 1,9/6/23
+Unsafe Data Structure,22,0,Misc,1,Something we can minimally implement for future verification work.,Author 1,8/7/23,Author 1,8/7/23
+Unsafe is Difficult to Understand,17,0,Reasoning,1,Any mention of unsafe being difficult to understand.,Author 1,8/6/23,Author 1,8/7/23
+UnsafeCell<T>,26,0,Types,1,Related to the type UnsafeCell<T>,Author 1,8/7/23,Author 1,8/10/23
+Unwinding Across FFI Boundaries,1,0,Bug Categories,1,"Unwinding stack frames across FFI boundaries. For example, panicking in a rust function that was called by a C function, which is called by a Rust function, may be undefined behavior.",Author 1,8/6/23,Author 1,8/9/23
+Use After Free,1,0,Bug Categories,1,Dereferencing a pointer to freed memory.,Author 1,8/6/23,Author 1,8/9/23
+Using Uninitialized Memory,2,0,Bug Categories,1,Using uninitialized memory,Author 1,8/6/23,Author 1,8/9/23
+Valgrind,6,0,Tools,1,,Author 2,8/20/23,Author 1,9/5/23
+Volatile Intrinsics,4,0,Unsafe Features,1,,Author 1,8/9/23,Author 1,9/5/23
+Wants Solution,33,0,Misc,1,Desiring a particular solution.,Author 1,8/6/23,Author 1,8/7/23
+WASI,1,0,Tools,1,,Author 2,8/19/23,Author 1,9/5/23
+wasm-bindgen,5,0,Tools,1,,Author 1,8/9/23,Author 1,9/3/23
+Weak<T>,1,0,Types,1,"Related to the type Weak<T>, or a ""weak reference""",Author 2,8/18/23,Author 1,9/5/23
+Web Application Development,6,0,Domain,1,"Developing web applications, likely by compiling Rust to WASM.",Author 1,8/6/23,Author 1,8/7/23
+Web Browser Development,2,0,Domain,1,"Developing a web browser using Rust, likely Firefox.",Author 1,8/6/23,Author 1,8/7/23
+When to Encapsulate?,6,0,Encapsulation,1,Advice or policy on when and how to create a safe encapsulation around unsafe code.,Author 1,8/9/23,Author 1,8/29/23
+Windows,1,0,Domain,1,"Related to Windows development, use of the WinAPI",Author 1,8/6/23,Author 1,8/7/23
+windows-bindgen,1,0,Tools,1,,Author 1,9/5/23,Author 1,9/5/23
+Worked Around Miri's Limitations,2,0,Miri,1,Merged from Mocks and Worked Around Miri's Limitations,Author 1,8/10/23,Author 1,9/5/23
+Writing beyond a boundary,1,0,Unsafe Features,1,,Author 2,9/8/23,Author 2,9/8/23
+Zero-Sized Allocation,2,0,Bug Categories,1,"Allocating something of zero size, which can be undefined behavior depending on your malloc",Author 1,8/6/23,Author 1,8/9/23

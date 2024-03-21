@@ -1,0 +1,31 @@
+question_id,question
+StartDate,Start Date
+EndDate,End Date
+Status,Response Type
+Progress,Progress
+Duration,Duration (in seconds)
+Finished,Finished
+RecordedDate,Recorded Date
+CQ1,I am age 18 or older.
+CQ2,I have read and understand the information above.
+CQ3,I want to participate in this research and continue with the survey.
+EQ1,Do you have more than 1 year of experience using Rust?
+EQ2,Do you regularly write new Rust code or edit existing Rust code within an unsafe block or function?
+BQ1,How many years of experience do you have using Rust?
+BQ2,Do you call foreign functions from Rust?
+BQ3,Do you call Rust functions from other languages?
+BQ4,Do you use Rust's intrinsics?
+BQ5,Do you use system calls in Rust?
+BQ6,Which of the following reference and memory container types have you converted to raw pointers or used to contain raw pointers? - Selected Choice
+BQ6_11_TEXT,Which of the following reference and memory container types have you converted to raw pointers or used to contain raw pointers? - Other - Text
+BQ7,Which of the following bug-finding tools do you use with codebases containing unsafe Rust? - Selected Choice
+BQ7_7_TEXT,Which of the following bug-finding tools do you use with codebases containing unsafe Rust? - Other - Text
+FQ1,Foreign functions that you call from Rust are written in: - Selected Choice
+FQ1_12_TEXT,Foreign functions that you call from Rust are written in: - Other - Text
+FQ2,Your code that calls foreign Rust functions is written in: - Selected Choice
+FQ2_12_TEXT,Your code that calls foreign Rust functions is written in: - Other - Text
+FQ3,"Select the tools and methods you use to create foreign bindings to Rust, or from Rust to other languages. - Selected Choice"
+FQ3_16_TEXT,"Select the tools and methods you use to create foreign bindings to Rust, or from Rust to other languages. - Other - Text"
+PQ1,What is your name?
+PQ2,What is your email address?
+PQ3,What is your current affiliation?

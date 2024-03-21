@@ -1,0 +1,41 @@
+Timestamp,Author,Which item is this?,Tools,Types,Interoperation with:,Domain,Why unsafe?,Low-level operations,Unsafe data structure?,Exposed an unsafe API?,Documented pre and postconditions for safety?,Found a bug?,Issues with Miri,Challenges with bug-finding,Binding generation preferences,Uncertainty about Rust's semantics,Stigma Against Unsafe
+7/31/2023 12:24:34,author1,1,"Crucible, Kani",,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 12:28:12,author1,2,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 12:29:22,author1,3,Diplomat,,,N/A,To interoperate with foreign code,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 12:31:09,author1,4,"wasm-bindgen, wasmtime",,"C, WASM / JavaScript / TypeScript",Web development,To interoperate with foreign code,,N/A,N/A,N/A,,,N/A,Write bindings manually,N/A,N/A
+7/31/2023 12:32:00,author1,5,,,,N/A,To interoperate with foreign code,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 12:34:02,author1,6,,,C++,N/A,To interoperate with foreign code,,N/A,N/A,N/A,,,N/A,N/A,Yes,N/A
+7/31/2023 12:34:57,author1,7,,,,N/A,,,N/A,N/A,N/A,Undefined Behavior,,N/A,N/A,N/A,N/A
+7/31/2023 12:36:45,author1,8,,,,N/A,To circumvent the constraints imposed by Rust's type system,Pointer arithmetic / integer to pointer conversion,Yes,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 12:39:07,author1,9,,,C++,N/A,To interoperate with foreign code,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 12:40:43,author1,10,,static variables,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 12:41:41,author1,11,,,,N/A,,,N/A,N/A,Yes,,,N/A,N/A,N/A,N/A
+7/31/2023 12:42:32,author1,12,,,,N/A,,,N/A,N/A,N/A,Undefined Behavior,,N/A,N/A,N/A,N/A
+7/31/2023 12:43:20,author1,13,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 12:45:40,author1,14,"JNA,JNI",,Java,N/A,To interoperate with foreign code,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 12:46:20,author1,15,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 12:47:01,author1,16,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 12:48:02,author1,17,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,Yes,N/A
+7/31/2023 12:49:40,author1,18,"Miri, Valgrind",,,N/A,To circumvent the constraints imposed by Rust's type system,integer to enum conversion,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 12:51:01,author1,19,,Vec<T>,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 12:53:32,author1,20,,Vec<T>,,Operating Systems,To interact with hardware the operating system or other low-level external interfaces,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 13:16:33,author2,1,"Crucible, Kani",,,N/A, ,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 13:23:50,author2,2,,,,Operating Systems,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 13:25:24,author2,3,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 13:29:05,author2,4,,,WASM / JavaScript / TypeScript,N/A,,,N/A,N/A,N/A,,,N/A,Write bindings manually,N/A,N/A
+7/31/2023 15:04:52,author2,5,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 15:07:38,author2,6,,,C++,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 15:11:40,author2,7,,,,N/A,,,N/A,N/A,N/A,Undefined Behavior,,N/A,N/A,N/A,N/A
+7/31/2023 15:14:33,author2,8,,,,N/A,Unsafe is more ergonomic,Pointer arithmetic / integer to pointer conversion,Yes,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 15:16:13,author2,9,,,C++,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 15:17:07,author2,10,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 15:18:30,author2,11,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 15:20:03,author2,12,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 15:22:37,author2,13,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 15:24:19,author2,14,,,Java,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 15:25:06,author2,15,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 15:25:55,author2,16,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 15:28:10,author2,17,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,Yes,N/A
+7/31/2023 15:29:22,author2,18,"Miri, Valgrind",,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 15:30:37,author2,19,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+7/31/2023 15:34:30,author2,20,,,,Operating Systems,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A

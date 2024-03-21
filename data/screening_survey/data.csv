@@ -1,0 +1,96 @@
+StartDate,EndDate,Progress,Duration,Finished,RecordedDate,CQ1,CQ2,CQ3,EQ1,EQ2,BQ1,BQ2,BQ3,BQ4,BQ5,BQ6,BQ6_11_TEXT,BQ7,BQ7_7_TEXT,FQ1,FQ1_12_TEXT,FQ2,FQ2_12_TEXT,FQ3,FQ3_16_TEXT,BQ1_CLEAN,PQ3,ID,PID
+4/20/23 5:13,4/20/23 5:15,100,99,TRUE,4/20/23 5:15,Yes,Yes,Yes,Yes,Yes,2,No,No,Yes,No,Other,slices mostly,Other,hopes and prayers ;),NA,NA,NA,NA,NA,NA,2,Industry,2,P1
+4/24/23 15:37,4/24/23 15:43,100,358,TRUE,4/24/23 15:43,Yes,Yes,Yes,Yes,Yes,5,Yes,Yes,Yes,Yes,"Box,Rc,UnsafeCell,Cell,Arc,MaybeUninit,ManuallyDrop",NA,"Clippy,Miri",NA,"C,C++,JavaScript/TypeScript",NA,"C,C++,JavaScript/TypeScript",NA,"Written manually,bindgen,cbindgen,wasm-bindgen,Other",windows-bindgen,5,"Industry,Open source",6,P3
+4/24/23 16:50,4/24/23 16:58,100,513,TRUE,4/24/23 16:58,Yes,Yes,Yes,Yes,Yes,8,Yes,No,Yes,No,"Box,UnsafeCell,Cell,RefCell",NA,"Clippy,Miri",NA,"C,C++",NA,NA,NA,"Written manually,cbindgen,wasm-bindgen",NA,8,"Industry,Open source",7,P4
+4/27/23 13:10,4/27/23 13:20,100,585,TRUE,4/27/23 13:20,Yes,Yes,Yes,Yes,Yes,2,Yes,Yes,Yes,Yes,"Box,OnceCell",NA,Other,Usually none,"C,C++,Python,Java,Other",Cython,"C,Java",NA,"Written manually,cbindgen",NA,2,"Industry,Open source",8,P5
+4/28/23 10:58,4/28/23 11:00,100,145,TRUE,4/28/23 11:00,Yes,Yes,Yes,Yes,Yes,3,Yes,No,Yes,Yes,"Box,UnsafeCell,MaybeUninit,ManuallyDrop",NA,"Clippy,AddressSanitizer (ASAN),MemorySanitizer (MSAN)",NA,"C,C++",NA,NA,NA,"cbindgen,cxx",NA,3,Academia,9,P6
+4/30/23 12:15,4/30/23 12:18,100,219,TRUE,4/30/23 12:18,Yes,Yes,Yes,Yes,Yes,10,Yes,Yes,Yes,Yes,"Box,Rc,UnsafeCell,Cell,RefCell,Arc,MaybeUninit,ManuallyDrop",NA,"Clippy,Miri,AddressSanitizer (ASAN),ThreadSanitizer (TSAN),Other",cargo-fuzz,"C,C++,JavaScript/TypeScript,Python,Java",NA,"C,C++,JavaScript/TypeScript,Java",NA,"bindgen,cbindgen,wasm-bindgen,cxx,autocxx,Other",diplomat,10,"Industry,Rust team",3,P2
+5/1/23 10:17,5/1/23 10:23,100,378,TRUE,5/1/23 10:23,Yes,Yes,Yes,Yes,Yes,2,Yes,Yes,Yes,Yes,"Box,Rc",NA,"Clippy,Miri,Other",Valgrind,C,NA,C,NA,Written manually,NA,2,NA,NA,NA
+5/1/23 10:22,5/1/23 11:13,100,3025,TRUE,5/1/23 11:13,Yes,Yes,Yes,Yes,Yes,6,Yes,Yes,No,No,"Box,UnsafeCell,MaybeUninit",NA,Clippy,NA,"C,C++",NA,"C,C++,Python",NA,"bindgen,cbindgen,cxx,PyO3",NA,6,Industry,10,P7
+5/1/23 10:59,5/1/23 11:15,100,950,TRUE,5/1/23 11:15,Yes,Yes,Yes,Yes,Yes,4,Yes,Yes,Yes,Yes,"Box,UnsafeCell,MaybeUninit",NA,"Clippy,Miri,AddressSanitizer (ASAN)",NA,"C,C++",NA,"C,C++",NA,"Written manually,bindgen,cbindgen,windows-bindgen,cxx",NA,4,Industry,11,NA
+5/1/23 11:28,5/1/23 11:33,100,286,TRUE,5/1/23 11:33,Yes,Yes,Yes,Yes,Yes,2,Yes,No,No,No,"Box,Arc",NA,"Clippy,Miri",NA,C,NA,NA,NA,bindgen,NA,2,Open Source,13,NA
+5/1/23 12:00,5/1/23 12:03,100,225,TRUE,5/1/23 12:03,Yes,Yes,Yes,Yes,Yes,7,Yes,Yes,No,No,"Box,Arc,MaybeUninit",NA,Other,none,Other,Julia,Other,Julia,Other,bindgen-fork,7,Open Source,12,NA
+5/1/23 13:05,5/1/23 13:08,100,223,TRUE,5/1/23 13:08,Yes,Yes,Yes,Yes,Yes,5+,Yes,Yes,Yes,No,"Box,Other",Embedded PAC types,"Clippy,Other",valgrind,C,NA,"C,C++,Other",python,"Written manually,bindgen,PyO3",NA,5,Industry,14,P8
+5/1/23 13:21,5/1/23 13:27,100,358,TRUE,5/1/23 13:27,Yes,Yes,Yes,Yes,Yes,5,Yes,No,Yes,Yes,"Box,UnsafeCell,Cell,MaybeUninit",NA,"Miri,ThreadSanitizer (TSAN)",NA,"C,C++",NA,NA,NA,Written manually,NA,5,Open Source,15,NA
+5/1/23 13:39,5/1/23 13:43,100,285,TRUE,5/1/23 13:43,Yes,Yes,Yes,Yes,Yes,7,Yes,No,Yes,No,Other,vec,Clippy,NA,C,NA,NA,NA,"Written manually,bindgen",NA,7,Industry,16,NA
+5/1/23 13:47,5/1/23 13:49,100,118,TRUE,5/1/23 13:49,Yes,Yes,Yes,Yes,Yes,2,Yes,No,Yes,Yes,"Box,Rc,UnsafeCell,MaybeUninit",NA,"Clippy,Miri,AddressSanitizer (ASAN),ThreadSanitizer (TSAN),UndefinedBehaviorSanitizer (UBSAN),MemorySanitizer (MSAN),Other",valgrind,"C,C++",NA,NA,NA,Written manually,NA,2,Open Source,17,P9
+5/1/23 14:08,5/1/23 14:11,100,211,TRUE,5/1/23 14:11,Yes,Yes,Yes,Yes,Yes,4,No,No,No,Yes,"Box,Rc,UnsafeCell,Arc,MaybeUninit",NA,"Clippy,Miri",NA,NA,NA,NA,NA,NA,NA,4,"Industry,Open source",18,NA
+5/1/23 14:26,5/1/23 14:29,100,139,TRUE,5/1/23 14:29,Yes,Yes,Yes,Yes,Yes,2,No,No,Yes,No,"Box,UnsafeCell,MaybeUninit,ManuallyDrop",NA,"Clippy,Miri,AddressSanitizer (ASAN),ThreadSanitizer (TSAN),MemorySanitizer (MSAN),Other",Valgrind,NA,NA,NA,NA,NA,NA,2,Open Source,19,P10
+5/1/23 14:28,5/1/23 14:32,100,225,TRUE,5/1/23 14:32,Yes,Yes,Yes,Yes,Yes,3,Yes,Yes,No,Yes,"Box,RefCell,MaybeUninit,ManuallyDrop,Other",Vec,"Clippy,Miri",NA,"C,C++,C#",NA,"C,C++,C#",NA,"Written manually,Other","interoptopus, godot-rust",3,Industry,NA,NA
+5/1/23 14:43,5/1/23 14:48,100,325,TRUE,5/1/23 14:48,Yes,Yes,Yes,Yes,Yes,5,Yes,Yes,Yes,Yes,"Box,Rc,UnsafeCell,Cell,RefCell,Arc,MaybeUninit,ManuallyDrop,LazyCell,OnceCell",NA,"Clippy,Miri,AddressSanitizer (ASAN),ThreadSanitizer (TSAN),UndefinedBehaviorSanitizer (UBSAN),MemorySanitizer (MSAN)",NA,"C,C++,JavaScript/TypeScript,Python,Haskell,C#,Other",Futhark,"C,C++,JavaScript/TypeScript,Haskell,C#,Other",Futhark,"Written manually,bindgen,cbindgen,wasm-bindgen,hs-bindgen,node-bindgen,csharp-bridge,cxx,autocxx,PyO3",NA,5,Industry,20,P11
+5/1/23 15:14,5/1/23 15:19,100,278,TRUE,5/1/23 15:19,Yes,Yes,Yes,Yes,Yes,7,Yes,Yes,No,Yes,Box,NA,"Clippy,Miri,AddressSanitizer (ASAN),UndefinedBehaviorSanitizer (UBSAN)",NA,"C,C++",NA,"C,Other",Erlang,"Written manually,bindgen,cbindgen,Other",https://github.com/rusterlium/rustler,7,Industry,21,NA
+5/1/23 15:36,5/1/23 15:38,100,81,TRUE,5/1/23 15:38,Yes,Yes,Yes,Yes,Yes,6,No,Yes,Yes,No,"Box,UnsafeCell,Cell,RefCell,Arc,MaybeUninit,ManuallyDrop,OnceCell",NA,Clippy,NA,NA,NA,Other,assembly,Written manually,NA,6,"Industry,Academia",22,P12
+5/1/23 15:49,5/1/23 15:53,100,254,TRUE,5/1/23 15:53,Yes,Yes,Yes,Yes,Yes,8,Yes,No,Yes,Yes,"Box,UnsafeCell,MaybeUninit",NA,Other,None,Other,Assmebly,NA,NA,Written manually,NA,8,"Academia,Open Source",23,NA
+5/1/23 16:02,5/1/23 16:07,100,290,TRUE,5/1/23 16:07,Yes,Yes,Yes,Yes,Yes,4,Yes,Yes,No,Yes,"Box,Arc,MaybeUninit,ManuallyDrop",NA,"Miri,ThreadSanitizer (TSAN)",NA,"C,JavaScript/TypeScript",NA,"C,Go,Python",NA,"Written manually,bindgen,wasm-bindgen,PyO3",NA,4,Industry,24,NA
+5/1/23 18:23,5/1/23 18:28,100,265,TRUE,5/1/23 18:28,Yes,Yes,Yes,Yes,Yes,1.5,Yes,No,Yes,No,"Box,Arc",NA,Other,NA,"C,C++",NA,NA,NA,bindgen,NA,1.5,Industry,31,P15
+5/1/23 19:07,5/1/23 19:11,100,196,TRUE,5/1/23 19:11,Yes,Yes,Yes,Yes,Yes,5,Yes,Yes,Yes,No,"Box,UnsafeCell,MaybeUninit,ManuallyDrop",NA,"Clippy,Miri",NA,"C,C++,Swift",NA,"C,C++,JavaScript/TypeScript,Python,Swift,Java",NA,"Written manually,cbindgen,wasm-bindgen,swift-bridge,PyO3",NA,5,Other,30,NA
+5/1/23 20:32,5/1/23 20:38,100,364,TRUE,5/1/23 20:38,Yes,Yes,Yes,Yes,Yes,6,No,No,Yes,No,"MaybeUninit,ManuallyDrop,Other",Slice,Miri,NA,NA,NA,NA,NA,NA,NA,6,"Rust Team,Open Source",29,NA
+5/1/23 21:09,5/1/23 21:13,100,254,TRUE,5/1/23 21:13,Yes,Yes,Yes,Yes,Yes,Around 7 (since right after the 1.0 release),Yes,Yes,Yes,Yes,"Box,Rc,UnsafeCell,Cell,RefCell,Arc,MaybeUninit,ManuallyDrop,LazyCell,OnceCell",NA,"Clippy,Miri,AddressSanitizer (ASAN),ThreadSanitizer (TSAN)",NA,"C,C++,Swift,Java,C#",NA,"C,C++,JavaScript/TypeScript,Python,Swift,Java,C#",NA,"Written manually,bindgen,wasm-bindgen,windows-bindgen,cxx,autocxx,Other",uniffi,7,"Rust Team,Open Source,Industry",28,P14
+5/1/23 23:00,5/1/23 23:06,100,336,TRUE,5/1/23 23:06,Yes,Yes,Yes,Yes,Yes,3 years +,Yes,Yes,Yes,Yes,"Box,Arc,MaybeUninit,ManuallyDrop,Other",String/Vec/slice,"Clippy,Miri,AddressSanitizer (ASAN),ThreadSanitizer (TSAN),UndefinedBehaviorSanitizer (UBSAN),MemorySanitizer (MSAN)",NA,"C,C++",NA,"C,C++",NA,"bindgen,cxx",NA,3,"Industry,Open Source",27,NA
+5/2/23 1:35,5/2/23 1:40,100,315,TRUE,5/2/23 1:40,Yes,Yes,Yes,Yes,Yes,10,Yes,Yes,Yes,Yes,"Box,UnsafeCell,Cell,ManuallyDrop",NA,"Miri,AddressSanitizer (ASAN),Other",libFuzzer based fuzzing,"C,OCaml",NA,"C,C++,JavaScript/TypeScript,Go,Python,C#",NA,"Written manually,wasm-bindgen,ocaml-interop",NA,10,Industry,26,P13
+5/2/23 2:24,5/2/23 2:28,100,193,TRUE,5/2/23 2:28,Yes,Yes,Yes,Yes,Yes,2,Yes,No,Yes,Yes,Cell,NA,Miri,NA,Java,NA,NA,NA,wasm-bindgen,NA,2,Other,NA,NA
+5/2/23 4:25,5/2/23 4:28,100,183,TRUE,5/2/23 4:28,Yes,Yes,Yes,Yes,Yes,4,Yes,Yes,Yes,Yes,"Box,Rc,UnsafeCell,Cell,RefCell,Arc,MaybeUninit,ManuallyDrop,LazyCell,OnceCell",NA,Miri,NA,"C,C++",NA,"C,Python",NA,"Written manually,PyO3",NA,4,Rust Team,25,NA
+5/2/23 10:44,5/2/23 10:53,100,541,TRUE,5/2/23 10:53,Yes,Yes,Yes,Yes,Yes,3 years,Yes,No,No,Yes,"RefCell,OnceCell",NA,"Clippy,Other","lldb's ""memory read"" command, etc",C,NA,NA,NA,"Written manually,bindgen",NA,3,Industry,38,NA
+5/2/23 10:58,5/2/23 11:02,100,220,TRUE,5/2/23 11:02,Yes,Yes,Yes,Yes,Yes,3+,Yes,Yes,No,Yes,"Box,UnsafeCell,Arc",NA,Clippy,NA,"C,C++,Python",NA,"C,C++",NA,"Written manually,bindgen,cbindgen,PyO3",NA,3,Industry,37,P18
+5/2/23 12:01,5/2/23 12:04,100,159,TRUE,5/2/23 12:04,Yes,Yes,Yes,Yes,Yes,2,Yes,Yes,Yes,Yes,"Box,Arc",NA,"Clippy,Miri",NA,C,NA,Python,NA,"Written manually,bindgen,PyO3",NA,2,Industry,36,NA
+5/2/23 12:23,5/2/23 12:37,100,879,TRUE,5/2/23 12:37,Yes,Yes,Yes,Yes,No,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/2/23 14:54,5/2/23 14:54,100,20,TRUE,5/2/23 14:54,Yes,Yes,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/2/23 14:55,5/2/23 14:56,100,17,TRUE,5/2/23 14:56,Yes,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/2/23 15:32,5/2/23 15:33,100,14,TRUE,5/2/23 15:33,Yes,Yes,Yes,Yes,No,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/2/23 17:39,5/2/23 17:40,100,40,TRUE,5/2/23 17:40,Yes,Yes,Yes,Yes,No,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/2/23 17:55,5/2/23 17:57,100,156,TRUE,5/2/23 17:57,Yes,Yes,Yes,Yes,Yes,4,Yes,No,Yes,No,"Box,MaybeUninit",NA,"Clippy,Miri",NA,"C,JavaScript/TypeScript,Python",NA,NA,NA,"Written manually,bindgen,cbindgen,wasm-bindgen",NA,4,Academia,35,P17
+5/3/23 15:32,5/3/23 15:36,100,277,TRUE,5/3/23 15:36,Yes,Yes,Yes,Yes,Yes,3,Yes,No,Yes,No,"Box,Rc,RefCell",NA,"Clippy,AddressSanitizer (ASAN),MemorySanitizer (MSAN)",NA,C,NA,NA,NA,Written manually,NA,3,"Academia,Other",34,NA
+5/3/23 19:43,5/3/23 19:48,100,270,TRUE,5/3/23 19:48,Yes,Yes,Yes,Yes,Yes,1.5 years,No,Yes,No,No,"Box,UnsafeCell,Arc,MaybeUninit",NA,Miri,NA,NA,NA,C++,NA,cxx,NA,1.5,Industry,33,NA
+5/3/23 20:07,5/3/23 20:13,100,330,TRUE,5/3/23 20:13,Yes,Yes,Yes,Yes,Yes,3,Yes,Yes,Yes,Yes,"Rc,UnsafeCell,RefCell,Arc,ManuallyDrop,LazyCell,OnceCell",NA,"Clippy,AddressSanitizer (ASAN),ThreadSanitizer (TSAN),MemorySanitizer (MSAN)",NA,"C++,Go,Ruby",NA,"C++,JavaScript/TypeScript",NA,"bindgen,windows-bindgen,swift-bridge,Other",WebAssembly,3,Industry,32,P16
+5/3/23 22:55,5/3/23 22:56,100,57,TRUE,5/3/23 22:56,Yes,Yes,Yes,Yes,No,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+4/27/23 21:37,4/27/23 21:39,80,103,FALSE,5/4/23 21:39,Yes,Yes,Yes,Yes,Yes,2,Yes,No,No,No,"Box,UnsafeCell,MaybeUninit,ManuallyDrop",NA,Clippy,NA,"C,C++",NA,NA,NA,Written manually,NA,2,NA,NA,NA
+4/28/23 8:23,4/28/23 8:23,30,26,FALSE,5/5/23 8:23,Yes,Yes,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+4/28/23 12:56,4/28/23 12:57,20,24,FALSE,5/5/23 12:57,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/1/23 8:54,5/1/23 8:55,30,33,FALSE,5/8/23 8:55,Yes,Yes,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/8/23 9:19,5/8/23 9:21,100,104,TRUE,5/8/23 9:21,Yes,Yes,Yes,Yes,No,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/1/23 9:41,5/1/23 9:56,80,882,FALSE,5/8/23 9:56,Yes,Yes,Yes,Yes,Yes,2,No,No,Yes,No,"Box,Arc",NA,Other,none,NA,NA,NA,NA,NA,NA,2,NA,NA,NA
+5/1/23 10:02,5/1/23 10:03,30,25,FALSE,5/8/23 10:03,Yes,Yes,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/1/23 11:54,5/1/23 11:54,80,40,FALSE,5/8/23 11:54,Yes,Yes,Yes,Yes,Yes,ye,Yes,Yes,Yes,Yes,"UnsafeCell,Cell",NA,"Clippy,Miri",NA,"Go,Python",NA,"C,C++",NA,"Written manually,bindgen",NA,NA,NA,NA,NA
+5/1/23 12:26,5/1/23 12:32,75,388,FALSE,5/8/23 12:32,Yes,Yes,Yes,Yes,Yes,4,Yes,Yes,Yes,Yes,"UnsafeCell,Cell,MaybeUninit",NA,"AddressSanitizer (ASAN),ThreadSanitizer (TSAN),UndefinedBehaviorSanitizer (UBSAN)",NA,"C++,JavaScript/TypeScript,Java",NA,C++,NA,NA,NA,4,NA,NA,NA
+5/1/23 13:01,5/1/23 13:05,80,257,FALSE,5/8/23 13:05,Yes,Yes,Yes,Yes,Yes,3.5,No,No,Yes,No,"Box,MaybeUninit",NA,"Clippy,Miri,Other",valgrind,NA,NA,NA,NA,NA,NA,3.5,NA,NA,NA
+5/1/23 13:09,5/1/23 13:09,30,22,FALSE,5/8/23 13:09,Yes,Yes,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/1/23 13:13,5/1/23 13:14,30,40,FALSE,5/8/23 13:14,Yes,Yes,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/1/23 13:49,5/1/23 13:49,20,15,FALSE,5/8/23 13:49,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/1/23 13:50,5/1/23 13:54,80,206,FALSE,5/8/23 13:54,Yes,Yes,Yes,Yes,Yes,2,No,No,No,No,"Box,UnsafeCell,MaybeUninit,ManuallyDrop",NA,"Clippy,Miri,AddressSanitizer (ASAN),ThreadSanitizer (TSAN),MemorySanitizer (MSAN)",NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA
+5/1/23 13:26,5/1/23 14:06,80,2362,FALSE,5/8/23 14:06,Yes,Yes,Yes,Yes,Yes,1year and 8 month,Yes,Yes,Yes,Yes,UnsafeCell,NA,UndefinedBehaviorSanitizer (UBSAN),NA,Java,NA,"JavaScript/TypeScript,Python,Java",NA,"Written manually,cbindgen,windows-bindgen,hs-bindgen,ocaml-interop",NA,1.666666667,NA,NA,NA
+5/1/23 14:14,5/1/23 14:15,30,95,FALSE,5/8/23 14:15,Yes,Yes,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/1/23 14:22,5/1/23 14:23,80,65,FALSE,5/8/23 14:23,Yes,Yes,Yes,Yes,Yes,2,No,No,Yes,Yes,"Box,Rc,UnsafeCell,Cell,RefCell,MaybeUninit,ManuallyDrop,LazyCell,OnceCell",NA,"Clippy,Miri",NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA
+5/1/23 14:35,5/1/23 14:36,30,35,FALSE,5/8/23 14:36,Yes,Yes,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/1/23 14:43,5/1/23 14:47,80,266,FALSE,5/8/23 14:48,Yes,Yes,Yes,Yes,Yes,6,No,No,Yes,Yes,Box,NA,"Clippy,Miri",NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA
+5/1/23 15:31,5/1/23 15:33,80,132,FALSE,5/8/23 15:33,Yes,Yes,Yes,Yes,Yes,2,No,No,Yes,No,"Box,MaybeUninit,ManuallyDrop,Other",Vec,"Clippy,Miri",NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA
+5/1/23 15:31,5/1/23 15:35,80,182,FALSE,5/8/23 15:35,Yes,Yes,Yes,Yes,Yes,1.5,Yes,Yes,No,No,"Box,ManuallyDrop",NA,"Clippy,Miri",NA,C,NA,C,NA,"Written manually,bindgen",NA,1.5,NA,NA,NA
+5/1/23 15:47,5/1/23 15:47,30,28,FALSE,5/8/23 15:47,Yes,Yes,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/1/23 16:08,5/1/23 16:12,30,244,FALSE,5/8/23 16:13,Yes,Yes,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/1/23 17:01,5/1/23 17:02,30,34,FALSE,5/8/23 17:02,Yes,Yes,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/1/23 17:33,5/1/23 17:33,30,51,FALSE,5/8/23 17:34,Yes,Yes,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/1/23 18:16,5/1/23 18:21,80,252,FALSE,5/8/23 18:21,Yes,Yes,Yes,Yes,Yes,6,No,No,No,No,"Box,MaybeUninit,ManuallyDrop",NA,"Clippy,Miri",NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA
+5/1/23 18:49,5/1/23 18:55,20,407,FALSE,5/8/23 18:56,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/1/23 16:08,5/1/23 19:51,30,13397,FALSE,5/8/23 19:51,Yes,Yes,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/1/23 20:03,5/1/23 20:07,80,220,FALSE,5/8/23 20:07,Yes,Yes,Yes,Yes,Yes,4,Yes,No,No,Yes,MaybeUninit,NA,Clippy,NA,"C,C++",NA,NA,NA,"Written manually,bindgen,cbindgen,wasm-bindgen",NA,4,NA,NA,NA
+5/1/23 21:08,5/1/23 21:11,80,193,FALSE,5/8/23 21:11,Yes,Yes,Yes,Yes,Yes,5,Yes,No,No,Yes,UnsafeCell,NA,Other,none,"C,C++",NA,NA,NA,Written manually,NA,5,NA,NA,NA
+5/1/23 22:33,5/1/23 22:33,20,15,FALSE,5/8/23 22:33,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/1/23 23:17,5/1/23 23:21,80,206,FALSE,5/8/23 23:21,Yes,Yes,Yes,Yes,Yes,3,No,No,Yes,No,Other,None,Clippy,NA,NA,NA,NA,NA,NA,NA,3,NA,NA,NA
+5/1/23 23:48,5/1/23 23:48,20,32,FALSE,5/8/23 23:48,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/2/23 0:02,5/2/23 0:02,30,30,FALSE,5/9/23 0:02,Yes,Yes,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/2/23 0:45,5/2/23 0:47,80,156,FALSE,5/9/23 0:48,Yes,Yes,Yes,Yes,Yes,1,No,No,No,No,"Box,UnsafeCell",NA,"Clippy,Miri",NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA
+5/2/23 0:51,5/2/23 0:51,30,13,FALSE,5/9/23 0:51,Yes,Yes,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/2/23 3:30,5/2/23 3:31,30,37,FALSE,5/9/23 3:31,Yes,Yes,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/2/23 4:07,5/2/23 4:09,70,118,FALSE,5/9/23 4:09,Yes,Yes,Yes,Yes,Yes,3,Yes,Yes,Yes,Yes,"UnsafeCell,ManuallyDrop,Other",Slices/Arrays,Clippy,NA,"C,C++,Swift",NA,NA,NA,NA,NA,3,NA,NA,NA
+5/2/23 8:02,5/2/23 8:02,30,27,FALSE,5/9/23 8:02,Yes,Yes,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/2/23 8:31,5/2/23 8:33,65,97,FALSE,5/9/23 8:33,Yes,Yes,Yes,Yes,Yes,3,Yes,No,Yes,Yes,Box,NA,"Clippy,Miri",NA,NA,NA,NA,NA,NA,NA,3,NA,NA,NA
+5/2/23 12:38,5/2/23 12:41,80,142,FALSE,5/9/23 12:41,Yes,Yes,Yes,Yes,Yes,7,No,Yes,Yes,Yes,"Box,MaybeUninit",NA,"Clippy,Miri,UndefinedBehaviorSanitizer (UBSAN)",NA,NA,NA,Python,NA,PyO3,NA,7,NA,NA,NA
+5/2/23 17:01,5/2/23 17:01,20,52,FALSE,5/9/23 17:02,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/4/23 9:31,5/4/23 9:31,20,7,FALSE,5/11/23 9:31,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/5/23 4:52,5/5/23 4:53,30,69,FALSE,5/12/23 4:53,Yes,Yes,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/5/23 18:58,5/6/23 0:35,20,20185,FALSE,5/13/23 0:35,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/8/23 2:46,5/8/23 2:47,30,57,FALSE,5/15/23 2:47,Yes,Yes,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/25/23 21:31,5/25/23 21:51,100,1193,TRUE,5/25/23 21:51,Yes,Yes,Yes,Yes,Yes,4,Yes,Yes,Yes,Yes,"Box,UnsafeCell,RefCell,LazyCell",NA,"AddressSanitizer (ASAN),UndefinedBehaviorSanitizer (UBSAN),MemorySanitizer (MSAN)",NA,"C++,JavaScript/TypeScript,Python,Java,Ruby",NA,"C++,JavaScript/TypeScript,Python,Java,Ruby",NA,"bindgen,cbindgen,windows-bindgen,dart-bindgen,ocaml-interop",NA,4,Industry,39,P19
+5/30/23 10:14,5/30/23 10:54,100,2416,TRUE,5/30/23 10:54,Yes,Yes,Yes,Yes,Yes,2,Yes,Yes,Yes,Yes,"UnsafeCell,MaybeUninit,OnceCell",NA,"Clippy,Miri",NA,"C,C++,JavaScript/TypeScript,Python,Java,Ruby",NA,"C,C++,JavaScript/TypeScript,Python,Java,Ruby",NA,"cbindgen,wasm-bindgen,Other",rust-bindgen,2,Industry,NA,NA
+5/30/23 10:55,5/30/23 11:17,100,1334,TRUE,5/30/23 11:17,Yes,Yes,Yes,Yes,Yes,2,Yes,Yes,Yes,Yes,Rc,NA,"Clippy,Miri",NA,"C,C++,JavaScript/TypeScript,Python,Java,Ruby",NA,"C,C++,JavaScript/TypeScript,Python,Java,Ruby",NA,"bindgen,cbindgen,wasm-bindgen,PyO3,Other",neon,2,Other,NA,NA
+5/24/23 16:27,5/24/23 17:09,30,2494,FALSE,5/31/23 17:09,Yes,Yes,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5/30/23 10:06,5/30/23 10:08,30,104,FALSE,6/6/23 10:08,Yes,Yes,Yes,Yes,Yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

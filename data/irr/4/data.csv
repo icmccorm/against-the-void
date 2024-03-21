@@ -1,0 +1,61 @@
+Timestamp,Author,Which item is this?,Tools,Types,Interoperation with:,Domain,Why unsafe?,Did they use any of these unsafe operations?,Did they describe an unsafe data structure?,Did they expose an unsafe API?,Did they document pre and postconditions or invariants for safety of unsafe code?,Found a bug?,Issues with Miri,Challenges with bug-finding,Binding generation preferences,Shifting ground - Did they express uncertainty about Rust's semantics or describe how they are either changing or unclear?,Did they speak about a stigma against unsafe or express shame or negative feelings about unsafe code?
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+8/2/2023 15:44:30,author2,1,,MaybeUninit<T>,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,Yes,N/A
+,,,,,,,,,,,,,,,,,
+8/2/2023 15:45:45,author2,2,,,,Game Development,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+8/2/2023 15:51:41,author2,3,,,,N/A,To circumvent the constraints imposed by Rust's type system,,Yes,N/A,N/A,Undefined Behavior,,N/A,N/A,N/A,N/A
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+8/2/2023 15:52:43,author2,4,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+,,,,,,,,,,,,,,,,,
+8/2/2023 15:54:05,author2,5,PyO3,,,N/A,,,N/A,N/A,N/A,,,N/A,Use the results from a binding-generation tool without modification,N/A,N/A
+,,,,,,,,,,,,,,,,,
+8/2/2023 15:55:20,author2,6,,,,N/A,,,N/A,N/A,N/A,Improper Alignment,,N/A,N/A,N/A,N/A
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+8/2/2023 15:58:39,author2,7,Miri,,,N/A,To circumvent the constraints imposed by Rust's type system,,Yes,N/A,N/A,,,N/A,N/A,N/A,N/A
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+8/2/2023 16:00:42,author2,8,,,,N/A,,,N/A,N/A,N/A,Data Races,,N/A,N/A,N/A,N/A
+8/2/2023 16:01:33,author2,9,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/2/2023 16:01:53,author1,1,,MaybeUninit<T>,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,Yes,N/A
+8/2/2023 16:02:16,author2,10,,,,N/A,,,N/A,N/A,N/A,,,N/A,Write bindings manually,N/A,N/A
+8/2/2023 16:02:48,author1,2,,,,Operating Systems,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/2/2023 16:03:51,author1,3,,,,N/A,,,N/A,N/A,N/A,Incorrect Type Casting,,N/A,N/A,N/A,N/A
+8/2/2023 16:04:25,author2,11,,,,JIT Compilation,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/2/2023 16:04:50,author1,4,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/2/2023 16:05:28,author1,5,PyO3,,"C, Python",N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/2/2023 16:05:37,author2,12,,,,N/A,,,N/A,N/A,N/A,,,N/A,Edit the output of a binding generation tool,N/A,N/A
+8/2/2023 16:06:40,author1,6,,,,N/A,,Instrinsics,N/A,N/A,N/A,Improper Alignment,,N/A,N/A,N/A,N/A
+8/2/2023 16:08:36,author1,7,Miri,Vec<T>,,N/A,,,Yes,N/A,N/A,,Lack of support for a feature or construct,N/A,N/A,N/A,N/A
+8/2/2023 16:09:16,author2,13,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,Yes,N/A
+8/2/2023 16:09:19,author1,8,,,,N/A,,Instrinsics,N/A,N/A,N/A,"Data Races, Use After Free",,N/A,N/A,N/A,N/A
+8/2/2023 16:09:45,author1,9,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/2/2023 16:10:18,author1,10,,,,N/A,,,N/A,N/A,N/A,,,N/A,Write bindings manually,N/A,N/A
+8/2/2023 16:11:33,author1,11,,Vec<T>,,JIT Compilation,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/2/2023 16:11:59,author2,14,,,,N/A,To circumvent the constraints imposed by Rust's type system,Raw allocation in Rust,Yes,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/2/2023 16:12:04,author1,12,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/2/2023 16:12:45,author1,13,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,Yes,N/A
+8/2/2023 16:13:51,author2,15,,,C,N/A,To circumvent the constraints imposed by Rust's type system,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/2/2023 16:14:03,author1,14,,,,N/A,To circumvent the constraints imposed by Rust's type system,Raw allocation in Rust,Yes,N/A,N/A,,,N/A,N/A,Yes,N/A
+8/2/2023 16:15:04,author1,15,,,C,N/A,To circumvent the constraints imposed by Rust's type system,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/2/2023 16:15:14,author2,16,"Miri, Sat solver",,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/2/2023 16:15:35,author1,16,Miri,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/2/2023 16:16:12,author1,17,,,C,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/2/2023 16:16:54,author2,17,,,C,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/2/2023 16:16:57,author1,18,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,Yes,N/A
+8/2/2023 16:17:32,author1,19,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,Yes,N/A
+8/2/2023 16:17:59,author2,18,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,Yes,N/A
+8/2/2023 16:18:11,author1,20,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/2/2023 16:18:45,author2,19,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,Yes,N/A
+8/2/2023 16:19:19,author2,20,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A

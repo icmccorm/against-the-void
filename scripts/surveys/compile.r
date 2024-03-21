@@ -1,0 +1,5 @@
+source("./scripts/surveys/in_text.r")
+source("./scripts/surveys/visuals.r")
+source("./scripts/surveys/table.r")
+source("./scripts/surveys/appendix.r")
+warnings()

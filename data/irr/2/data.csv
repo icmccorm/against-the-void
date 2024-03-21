@@ -1,0 +1,41 @@
+Timestamp,Author,Which item is this?,Tools,Types,Interoperation with:,Domain,Why unsafe?,Did they use any of these unsafe operations?,Did they describe an unsafe data structure?,Did they expose an unsafe API?,Did they document pre and postconditions or invariants for safety of unsafe code?,Found a bug?,Issues with Miri,Challenges with bug-finding,Binding generation preferences,Did they express uncertainty about Rust's semantics?,"Did they speak about a stigma against unsafe, or express shame or negative feelings about unsafe code?"
+8/1/2023 21:49:30,author1,1,,,,N/A,,,N/A,N/A,N/A,Excessive resource consumption,,N/A,N/A,N/A,N/A
+8/1/2023 21:53:23,author1,2,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/1/2023 21:54:31,author1,3,"Miri, ASAN",,,JIT Compilation,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/1/2023 21:55:41,author1,4,,,C,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/1/2023 21:57:12,author1,5,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/1/2023 21:58:22,author1,6,Valgrind,RefCell<T>,,N/A,"Unsafe is more ergonomic, easier to use",,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/1/2023 21:58:56,author1,7,,,,N/A,,,N/A,N/A,N/A,Data Races,,N/A,N/A,N/A,N/A
+8/1/2023 22:00:32,author1,8,Miri,,,N/A,,,N/A,N/A,N/A,,Tree Borrows/Stacked Borrows incorrectly considers my unsafe to be in violation of Rust’s aliasing model,N/A,N/A,Yes,N/A
+8/1/2023 22:01:56,author1,9,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,Yes,N/A
+8/1/2023 22:02:50,author1,10,,,,N/A,"To interact with hardware, the operating system, or other low-level external interfaces",Inline assembly,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/1/2023 22:04:19,author1,11,,,,N/A,,,N/A,N/A,N/A,Unhandled panic,,N/A,N/A,N/A,N/A
+8/1/2023 22:07:16,author1,12,,,,Embedded Systems,"To circumvent the constraints imposed by the API of a dependency or 3rd party, Indicate contract or invariant on safety",,N/A,N/A,N/A,,,N/A,N/A,N/A,Yes
+8/1/2023 22:08:02,author1,13,,,C,N/A,,,N/A,N/A,N/A,,,N/A,Use the results from a binding-generation tool without modification,N/A,N/A
+8/1/2023 22:10:08,author1,14,Miri,"UnsafeCell<T>, Rc/Arc<T>",,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/1/2023 22:10:45,author1,15,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/1/2023 22:11:43,author1,16,"CMake, cargo",,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/1/2023 22:12:53,author1,17,,MaybeUninit<T>,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/1/2023 22:14:32,author1,18,,Rc/Arc<T>,C,N/A,"Unsafe is more ergonomic, easier to use, To circumvent the constraints imposed by Rust's type system",Pointer arithmetic / integer to pointer conversion,Yes,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/1/2023 22:15:24,author1,19,,"RefCell<T>, Static",,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/1/2023 22:16:50,author1,20,,Box<T>,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/1/2023 14:45:12,author2,1,,,,N/A,,,N/A,N/A,N/A,Infinite loop,,N/A,N/A,N/A,N/A
+8/1/2023 14:46:23,author2,2,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/1/2023 14:49:12,author2,3,"Miri, ASAN",,,JIT Compilation,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/1/2023 15:29:28,author2,4,,,C,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/1/2023 15:45:52,author2,5,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/1/2023 15:47:32,author2,6,Valgrind,RefCell<T>,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/1/2023 15:51:47,author2,7,,,,N/A,,,N/A,N/A,N/A,Data Races,,N/A,N/A,N/A,N/A
+8/1/2023 15:55:45,author2,8,Miri,,,N/A,,,N/A,N/A,N/A,,Tree Borrows/Stacked Borrows incorrectly considers my unsafe to be in violation of Rust’s aliasing model,N/A,N/A,Yes,N/A
+8/1/2023 15:57:44,author2,9,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,Yes,N/A
+8/1/2023 15:59:25,author2,10,,,,Operating Systems,"To interact with hardware, the operating system, or other low-level external interfaces",Inline assembly,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/1/2023 16:00:19,author2,11,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/1/2023 16:02:29,author2,12,,,,Embedded Systems,"To interact with hardware, the operating system, or other low-level external interfaces",,N/A,N/A,N/A,,,N/A,N/A,N/A,Yes
+8/1/2023 16:12:27,author2,13,,,C,N/A,,,N/A,N/A,N/A,,,N/A,Use the results from a binding-generation tool without modification,N/A,N/A
+8/1/2023 16:14:53,author2,14,Miri,"UnsafeCell<T>, Rc/Arc<T>",,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/1/2023 16:18:55,author2,15,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/1/2023 16:19:50,author2,16,,,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/1/2023 16:23:01,author2,17,,MaybeUninit<T>,,N/A,,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/1/2023 16:30:41,author2,18,,Rc/Arc<T>,C,N/A,,"Custom allocator, Pointer arithmetic / integer to pointer conversion",N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/1/2023 16:33:53,author2,19,,Static,,N/A,To circumvent the constraints imposed by Rust's type system,,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A
+8/1/2023 16:35:43,author2,20,,Box<T>,,N/A,"To interact with hardware, the operating system, or other low-level external interfaces",,N/A,N/A,N/A,,,N/A,N/A,N/A,N/A

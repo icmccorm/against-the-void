@@ -1,0 +1,53 @@
+question_title,response_text,disjoint
+Domain,N/A,1
+Domain,Databases,1
+Domain,Embedded Systems,1
+Domain,JIT Compilation,1
+Domain,Windows/WinAPI,1
+Domain,Web Application Development,1
+Domain,Operating Systems,1
+Domain,Web Browser Development,1
+Domain,Game Development,1
+Domain,Other,1
+Why unsafe?,More ergonomic or easier to use,0
+Why unsafe?,Impossible or no other choice,0
+Why unsafe?,For fun,0
+Why unsafe?,To increase performance,0
+Why unsafe?,Unsafe as documentation,0
+Why unsafe?,Other,0
+Did they use any of these unsafe operations?,Replaced Rust's default allocator with a custom allocator,0
+Did they use any of these unsafe operations?,Raw allocation in Rust,0
+Did they use any of these unsafe operations?,Inline assembly,0
+Did they use any of these unsafe operations?,Instrinsics,0
+Did they use any of these unsafe operations?,System calls,0
+Did they use any of these unsafe operations?,Transmute,0
+Did they use any of these unsafe operations?,Multiple / cyclic aliasing,0
+Did they use any of these unsafe operations?,Other,0
+Did they expose an unsafe API?,Yes,1
+Did they document pre and postconditions or invariants for safety of unsafe code?,Yes,1
+Did the participant encounter any of these issues with Miri?,Lack of support for a feature or construct,0
+Did the participant encounter any of these issues with Miri?,Tree Borrows/Stacked Borrows incorrectly considers my unsafe to be in violation of Rust’s aliasing model,0
+Did the participant encounter any of these issues with Miri?,Runtime overhead,0
+Did the participant express a preference for a certain type of binding generation?,Prefers to use the results from a binding-generation tool without modification,0
+Did the participant express a preference for a certain type of binding generation?,Prefers to write bindings manually,0
+Did the participant express a preference for a certain type of binding generation?,Prefers to edit the output of a binding generation tool,0
+"Did they speak about a stigma against unsafe, or express shame or negative feelings about unsafe code?",Yes,1
+Did the participant encounter any of these bugs?,Undefined Behavior,0
+Did the participant encounter any of these bugs?,Data Races,0
+Did the participant encounter any of these bugs?,Memory Leak,0
+Did the participant encounter any of these bugs?,Double Free,0
+Did the participant encounter any of these bugs?,Use After Free,0
+Did the participant encounter any of these bugs?,Using Uninitialized Memory,0
+Did the participant encounter any of these bugs?,Mismatched FFI or Intrinsic Declaration,0
+Did the participant encounter any of these bugs?,Incorrect Linking,0
+Did the participant encounter any of these bugs?,Zero-Sized Allocation,0
+Did the participant encounter any of these bugs?,Deallocate Foreign Memory in Rust,0
+Did the participant encounter any of these bugs?,"From-Raw, Wrong Pointer",0
+Did the participant encounter any of these bugs?,Improper Alignment,0
+Did the participant encounter any of these bugs?,Unwinding Across FFI Boundaries,0
+Did the participant encounter any of these bugs?,Incorrect Type Casting,0
+Did the participant encounter any of these bugs?,Excessive Resource Use,0
+Did the participant encounter any of these bugs?,Out of Bounds Access,0
+Did the participant encounter any of these bugs?,Logical Error,0
+Did the participant encounter any of these bugs?,Stacked/Tree Borrows Violation,0
+Did the participant encounter any of these bugs?,Other,0

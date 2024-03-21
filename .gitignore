@@ -1,0 +1,13 @@
+.DS_Store
+__pycache__
+archives 
+sample.*
+choices.*
+.vscode
+output.csv
+sandbox.r
+build
+renv
+.Rprofile
+irr/*/*.tex
+irr/*/alpha.csv

@@ -1,0 +1,121 @@
+﻿Timestamp,Author,Which item is this?,Domain,Why unsafe?,Did they use any of these unsafe operations?,Did they expose an unsafe API?,Did they document pre and postconditions or invariants for safety of unsafe code?,Did the participant encounter any of these issues with Miri?,Did the participant express a preference for a certain type of binding generation?,"Did they speak about a stigma against unsafe, or express shame or negative feelings about unsafe code?",Did the participant encounter any of these bugs?
+8/7/2023 12:04:00,author2,1,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 12:04:26,author2,2,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 12:06:13,author2,3,N/A,NA,Multiple / cyclic aliasing,NA,NA,NA,NA,NA,NA
+8/7/2023 12:10:30,author2,4,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 12:11:40,author2,5,N/A,To increase performance,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 12:12:58,author2,6,N/A,NA,NA,NA,NA,Runtime overhead,NA,NA,NA
+8/7/2023 12:13:19,author2,7,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 12:13:44,author2,8,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 12:14:51,author2,9,Operating Systems,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 12:15:24,author2,10,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 12:16:31,author2,11,N/A,To increase performance,Transmute,NA,NA,NA,NA,NA,NA
+8/7/2023 12:17:57,author2,12,Embedded Systems,Impossible or no other choice,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 12:18:57,author2,13,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 12:21:43,author2,14,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 12:22:23,author2,15,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 12:23:04,author2,16,Embedded Systems,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 12:23:30,author2,17,Web Application Development,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 12:24:19,author2,18,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 12:25:03,author2,19,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 12:25:58,author2,20,N/A,NA,NA,NA,NA,NA,NA,NA,"From raw, wrong pointer"
+8/7/2023 12:32:08,author2,21,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 12:33:46,author2,22,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 12:34:11,author2,23,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 12:36:05,author2,24,N/A,Impossible or no other choice,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 12:36:25,author2,25,Web Application Development,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 12:37:55,author2,26,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 12:38:23,author2,27,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 12:39:00,author2,28,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 12:39:23,author2,29,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 12:39:50,author2,30,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 12:40:43,author2,31,N/A,NA,NA,NA,NA,NA,NA,NA,Deadlock
+8/7/2023 12:41:38,author2,32,Web Application Development,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 12:42:45,author2,33,N/A,To increase performance,Instrinsics,NA,NA,NA,NA,NA,NA
+8/7/2023 12:43:43,author2,34,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 13:09:07,author2,35,N/A,NA,Replaced Rust's default allocator with a custom allocator,NA,NA,NA,NA,NA,Unwinding across FFI boundaries
+8/7/2023 13:09:40,author2,36,N/A,NA,NA,NA,NA,NA,Prefers to edit the output of a binding generation tool,NA,NA
+8/7/2023 13:11:30,author2,37,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 13:12:35,author2,38,N/A,To increase performance,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 13:13:08,author2,39,Web Application Development,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 13:14:08,author2,40,Operating Systems,NA,NA,NA,Yes,NA,NA,NA,NA
+8/7/2023 13:14:41,author2,41,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 13:19:59,author2,42,N/A,NA,"Pointer arithmetic / integer to pointer conversion, Transmute",NA,NA,NA,NA,NA,NA
+8/7/2023 13:21:59,author2,43,N/A,NA,NA,NA,NA,NA,NA,NA,N/A
+8/7/2023 13:23:07,author2,44,N/A,"More ergonomic or easier to use, To increase performance, Unsafe as documentation",NA,NA,NA,NA,NA,NA,NA
+8/7/2023 13:26:01,author2,45,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 13:26:39,author2,46,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 13:27:24,author2,47,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 13:27:58,author2,48,N/A,More ergonomic or easier to use,Raw allocation in Rust,NA,NA,NA,NA,NA,NA
+8/7/2023 13:28:35,author2,49,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 13:28:54,author2,50,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 13:30:02,author2,51,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 13:30:37,author2,52,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 13:31:03,author2,53,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 13:31:38,author2,54,Web Application Development,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 13:32:11,author2,55,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 13:33:19,author2,56,N/A,NA,NA,NA,NA,Lack of support for a feature or construct,NA,NA,NA
+8/7/2023 13:33:56,author2,57,N/A,NA,Multiple / cyclic aliasing,NA,NA,NA,NA,NA,NA
+8/7/2023 13:35:54,author2,58,Game Development,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/2023 13:34:52,author2,59,N/A,NA,NA,NA,NA,NA,NA,NA,"Undefined behavior, Improper alignment"
+8/7/2023 13:35:54,author2,60,N/A,NA,NA,NA,NA,NA,NA,NA,NA
+8/7/23 13:28,author1,1,N/A,,,,,,,,
+8/7/23 13:30,author1,2,Game Development,,,,,,,,
+8/7/23 13:30,author1,3,N/A,,,Yes,,,,,
+8/7/23 13:31,author1,4,N/A,,,,,,,,
+8/7/23 13:31,author1,5,N/A,To increase performance,,,,,,,
+8/7/23 13:32,author1,6,N/A,,,,,Runtime overhead,,,
+8/7/23 13:32,author1,7,N/A,,,,,,,,
+8/7/23 13:32,author1,8,N/A,,,,,,,,
+8/7/23 13:33,author1,9,Operating Systems,,,,,,,,
+8/7/23 13:33,author1,10,N/A,,,,,,,,
+8/7/23 13:34,author1,11,N/A,To increase performance,,,,,,,
+8/7/23 13:34,author1,12,N/A,Impossible or no other choice,,,,,,,
+8/7/23 13:35,author1,13,N/A,,,,,,,,
+8/7/23 13:35,author1,14,N/A,,,,,,,,
+8/7/23 13:35,author1,15,N/A,,,,,,,,
+8/7/23 13:36,author1,16,N/A,,,,,,,,
+8/7/23 13:36,author1,17,N/A,,,,,,,,
+8/7/23 13:47,author1,18,N/A,,,,,,,,
+8/7/23 13:48,author1,19,N/A,,,,,,,,
+8/7/23 13:48,author1,20,N/A,,,,,,,,"From raw, wrong pointer"
+8/7/23 13:48,author1,21,N/A,,,,,,,,
+8/7/23 13:49,author1,22,N/A,,,,,,,,
+8/7/23 13:49,author1,23,N/A,,,,,,,,
+8/7/23 13:50,author1,24,N/A,"More ergonomic or easier to use, Impossible or no other choice",,,,,,,
+8/7/23 13:51,author1,25,N/A,,,,,,,,
+8/7/23 13:51,author1,26,N/A,,,,,,,,
+8/7/23 13:51,author1,27,N/A,,,,,,,,
+8/7/23 13:52,author1,28,N/A,,,,,,,,
+8/7/23 13:52,author1,29,N/A,,,,,,,,
+8/7/23 13:53,author1,30,N/A,,,,,,,,
+8/7/23 13:53,author1,31,N/A,,,,,,,,Deadlock
+8/7/23 13:54,author1,32,N/A,,,,,Lack of support for a feature or construct,,,
+8/7/23 13:54,author1,33,N/A,,Instrinsics,,,,,,
+8/7/23 13:55,author1,34,N/A,Impossible or no other choice,,,,,,,
+8/7/23 13:55,author1,35,N/A,,,,,,,,Unwinding across FFI boundaries
+8/7/23 13:55,author1,36,N/A,,,,,,Prefers to use the results from a binding-generation tool without modification,,
+8/7/23 13:56,author1,37,N/A,,,,,,,,
+8/7/23 13:56,author1,38,N/A,To increase performance,,,,,,,
+8/7/23 13:56,author1,39,Web Application Development,,,,,,,,
+8/7/23 13:56,author1,40,Operating Systems,,,,,,,,
+8/7/23 13:57,author1,41,N/A,,,,,,,,
+8/7/23 13:57,author1,42,N/A,,Pointer arithmetic / integer to pointer conversion,,,,,,
+8/7/23 13:57,author1,43,N/A,,,,,,,,
+8/7/23 13:58,author1,44,N/A,"More ergonomic or easier to use, To increase performance, Unsafe as documentation",,,,,,,
+8/7/23 13:58,author1,45,N/A,Unsafe as documentation,,,,,,,
+8/7/23 13:59,author1,46,N/A,,,,,,,,Undefined behavior
+8/7/23 13:59,author1,47,N/A,,,,,,,,
+8/7/23 13:59,author1,48,N/A,More ergonomic or easier to use,Raw allocation in Rust,,,,,,
+8/7/23 13:59,author1,49,N/A,,,,,,,,
+8/7/23 14:00,author1,50,N/A,,,,,,,,
+8/7/23 14:01,author1,51,N/A,,,,,,,,
+8/7/23 14:01,author1,52,N/A,,,,,,,,
+8/7/23 14:01,author1,53,N/A,,,,,,,,
+8/7/23 14:05,author1,54,Web Application Development / Game Development,,,,,,,,
+8/7/23 14:02,author1,55,N/A,,,,,,,,
+8/7/23 14:02,author1,56,N/A,,,,,Lack of support for a feature or construct,,,
+8/7/23 14:03,author1,57,N/A,,,,,,,,
+8/7/23 14:03,author1,58,Game Development,,,,,,,,
+8/7/23 14:04,author1,59,N/A,,,,,,,,Improper alignment
+8/7/23 14:04,author1,60,N/A,To increase performance,,,,,,,

@@ -1,0 +1,28 @@
+theme,theme_title
+Tools,Tools
+Types,Types
+Interoperation,Interoperation with:
+Domain,Domain
+Why unsafe?,Why unsafe?
+Unsafe Operations,Did they use any of these unsafe operations?
+Unsafe Data Structure,Did they describe an unsafe data structure?
+Unsafe API,Did they expose an unsafe API?
+Documented Invariants,Did they document pre and postconditions or invariants for safety of unsafe code?
+Bugs,Found a bug?
+Issues with Miri,Issues with Miri
+Bug-finding,Challenges with bug-finding
+Generation vs. Validation,Binding generation preferences
+Shifting Ground,"Shifting ground - Did they express uncertainty about Rust's semantics, or describe how they are either changing or unclear?"
+Stigma,"Did they speak about a stigma against unsafe, or express shame or negative feelings about unsafe code?"
+Issues with Miri,Did the participant encounter any of these issues with Miri?
+Generation vs. Validation,Did the participant express a preference for a certain type of binding generation?
+Bugs,Did the participant encounter any of these bugs?
+Low-level operations,Low-level operations
+Unsafe Data Structure,Unsafe data structure?
+Unsafe API,Exposed an unsafe API?
+Documented Invariants,Documented pre and postconditions for safety?
+Shifting Ground,Uncertainty about Rust's semantics
+Stigma,Stigma Against Unsafe
+Shifting Ground,Did they express uncertainty about Rust's semantics?
+Shifting Ground,Shifting ground - Did they express uncertainty about Rust's semantics or describe how they are either changing or unclear?
+Stigma,Did they speak about a stigma against unsafe or express shame or negative feelings about unsafe code?

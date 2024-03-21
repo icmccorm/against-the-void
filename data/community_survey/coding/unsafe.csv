@@ -1,0 +1,21 @@
+Code,Reason
+No Other Choice,"Typically, I try to only ever use unsafe for calling into FFI. That has no safe alternative at all."
+No Other Choice,It was the only option as I was doing FFI
+No Other Choice,An hardware-related implementation that couldn’t be safely exposed
+Feature,FFI
+No Other Choice,"Certain low level things are not possible without unsafe, regardless of ease-of-use or performance."
+Documentation,"I have marked functions as unsafe for reasons that don't traditionally require unsafe, if they can cause undesired behaviour"
+"Ergonomics, Experimentation",Unsafe more ergonomic and intuitive but also to practice unsafe
+"Feature, No Other Choice","C FFI, especially syscalls - impossible without unsafe"
+"Ergonomics, No Other Choice",It was either related to unsafe apis like window creation and once I used it to get around a lifetime qurik in a crate I used
+Feature,C FFI
+"Ergonomics, Experimentation","When porting code I am not completely familiar with from C to Rust, I find it can be helpful to do a 1:1 unsafe conversion first. During this process I gain a better understanding of how data is passed through the program and I can convert parts to safe Rust as I go."
+Feature,CUDA and FFI
+"Documentation, Ergonomics, No Other Choice","I sometimes use unsafe as a marker, voluntarily, when the caller/implementer needs to avoid unusual invalid situations that can't really be checked. I could omit the unsafe marker... but it would be less safe :) Similarly, in Rust std::fs::File is safe, yet you can open /proc/self/mem and do unsafe things with it. unsafe is a courtesy marker, when it makes sense"
+No Other Choice,Needing to maintain an existing C ABI
+No Other Choice,"I was wrapping FFI functions, e.g. on bare metal (Commander X16) or creating a static library that was linked into a C++ application"
+Feature,In one word: FFI
+Performance,Duplicating safe functions with less checks wrt data encodings for performance
+Uncertain,Sometimes there are crates that help with e.g. JNI but they request to buy into their artitectural choises.
+Performance,unsafe is faster _and_ the proram is an optimization game entry
+"Feature, Performance","FFI reasons, and uninit memory for performance reasons requires `unsafe`"
