@@ -1,8 +1,8 @@
 # “Against the Void" - Replication Package
 
-This repository is a replication package for the paper ['“Against the Void”: An Interview and Survey Study of How Rust Developers Use Unsafe Code.'](https://arxiv.org/abs/2404.02230) All direct (e.g. names, institutions) and indirect (positions, projects) identifying information from participants has been redacted following procedures approved by our institution's IRB. 
+This is the replication package for the paper '“Against the Void”: An Interview and Survey Study of How Rust Developers Use Unsafe Code.' All direct (e.g. names, institutions) and indirect (positions, projects) identifying information from participants has been redacted following procedures approved by our institution's IRB. 
 
-This repository contains the following
+This dataset contains the following
 ```
 - data               
     |- interviews           // raw interview transcripts
@@ -63,10 +63,3 @@ Each question in the screening and community surveys is identified by a unique I
         |- theme_mapping.csv
 ```
 To refine our codebook, we conducted 7 rounds of coding random samples of quotes and we calculated interrater reliability after each round. Coding decisions were made using an online form. Data for each round are contained in the [irr](https://github.com/icmccorm/against-the-void/tree/main/data/irr) directory in subdirectories numbered 1 through 7. Each subdirectory contains 3 files. The file [survey.csv](https://github.com/icmccorm/against-the-void/blob/main/data/irr/1/survey.csv) contains the codes presented by the form for each coder to select during that round, while [data.csv](https://github.com/icmccorm/against-the-void/blob/main/data/irr/1/data.csv) contains the selections made by each coder for each quote in [output.md](https://github.com/icmccorm/against-the-void/blob/main/data/irr/1/output.md).
-
-## Coauthors
-* [Tomas Dougan](https://github.com/taurreco)
-* [Sam Estep](https://samestep.com/)
-* [Hanan Hibshi](https://www.cs.cmu.edu/~hhibshi/)
-* [Jonathan Aldrich](https://www.cs.cmu.edu/~aldrich/)
-* [Joshua Sunshine](https://www.cs.cmu.edu/~jssunshi/)
