@@ -7,10 +7,8 @@ coding_decisions <- read_csv(file.path("data/interviews/coding/decisions.csv"), 
 coding_decisions_split <- coding_decisions %>%
     mutate(Codes = str_split(Codes, ",")) %>%
     unnest(Codes) %>%
-    mutate(Codes = trimws(Codes)) %>%
-    filter(str_detect(Codes, "Miri")) %>% write_csv(file.path("./miri_decisions"))
-decisions <- 
-
+    mutate(Codes = trimws(Codes))
+    
 ## Table of Codes and Themes
 codes <- read_csv(file.path("data/interviews/coding/codebook.csv"), show_col_types = FALSE) %>%
     mutate(Groups = str_split(Groups, ", ")) %>%

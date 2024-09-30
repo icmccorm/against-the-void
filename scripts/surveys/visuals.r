@@ -35,15 +35,6 @@ to_table <- function (df) {
     )
 }
 
-yn_frequency <- FREQ_ALL %>% 
-    inner_join(questions, by = c("question_id")) %>% 
-    filter(!is.na(type)) %>%
-    filter(type == "yn" | type == "ynu") %>%
-    select(rq, question, question_id, value, percentage, total_num_responses) %>%
-    # expand value into columns using percentage as values
-    pivot_wider(names_from = value, values_from = percentage) %>%
-    arrange(rq)
-
 PLOT_CONFIG <- list(
     list(
         type = "freq",
@@ -67,13 +58,19 @@ PLOT_CONFIG <- list(
     )
 )
 
+
+survey %>% filter(question_id == "WUQ1") %>% group_by(response_id) %>% summarize(n=n()) %>%
+    filter(n > 1) %>% nrow()
+
+
 plots <- PLOT_CONFIG %>% 
     lapply(function(config) {
         questions %>% 
             filter(type == config$type) %>% 
             pmap(function(rq, type, optional, gated_by, question_id, question) {
                 plot_id <- paste0(rq, "_", question_id)
-                total_num_responses <- 1
+                qid <- question_id
+                total_num_responses <- FREQ_ALL %>% filter(question_id == qid) %>% pull(total_num_responses)
                 df <- compute_likert_frequency(FREQ_ALL, question_id, config$choices)
                 labels <- plot_likert_bar(
                     df = df,
@@ -103,17 +100,39 @@ plots <- PLOT_CONFIG %>%
     group_split() %>%
     lapply(to_table)
 
+quickplot <- function(subset, name, question, choices, center = c()) {
+    total_num_responses <- subset %>% nrow()
+    frequency <- compute_frequency(subset)
+    likert_frequency <- compute_likert_frequency(frequency, question, choices)
+    labels <- plot_likert_bar(
+        df = likert_frequency,
+        total_num_responses = total_num_responses,
+        options = choices,
+        path = file.path(result_dir, paste0(name, "_", question, ".pdf")),
+        center = center
+    )
+}
+
 respondents_who_used_miri <- survey %>%
     filter(question_id == "VQ2" & value == "Miri") %>%
     select(response_id) %>%
-    unique()
-total_num_responses <- respondents_who_used_miri %>% nrow()
-miri_frequency <- compute_frequency(respondents_who_used_miri)
-miri_likert_frequency <- compute_likert_frequency(miri_frequency, "VQ6", frequency_choices)
-labels <- plot_likert_bar(
-    df = miri_likert_frequency,
-    total_num_responses = total_num_responses,
-    options = frequency_choices,
-    path = file.path(result_dir, "miri_VQ6.pdf"),
-    center = frequency_neutral
-)
+    unique() %>%
+    quickplot("2_miri", "VQ6", frequency_choices, frequency_neutral)
+
+respondents_who_used_auditing_tools <- survey %>%
+    filter(question_id == "VQ8", !is.na(value)) %>%
+    select(response_id) %>%
+    unique() %>%
+    quickplot("2_auditing_tools", "VQ7", frequency_choices, frequency_neutral)
+
+respondents_who_used_unsafe_apis <- survey %>% 
+    filter(question_id == "UFQ2", value %in% c("Calling unsafe functions written in Rust", "Calling foreign functions")) %>%
+    select(response_id) %>%
+    unique() %>%
+    quickplot("4_unsafe_apis", "LMUQ4", frequency_choices, frequency_neutral)
+
+respondents_who_regularly_wrote <- survey %>%
+    filter(question_id == "BQ6" & value == "Yes") %>%
+    select(response_id) %>%
+    unique() %>%
+    quickplot("4_regularly_wrote", "LMUQ3", frequency_choices, frequency_neutral)
