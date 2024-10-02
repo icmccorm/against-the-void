@@ -6,30 +6,15 @@ MC="mc"
 YN="yn"
 YNU="ynu"
 
-questions %>% filter(!(type %in% c(MC, CONSENT, FOLLOW_U))
-
-wrote_participants <- survey %>% 
-    filter(question_id == "BQ6") %>% 
-    filter(value == "Yes") %>% 
-
-
-    
-
-
-
-
 survey_mc <- survey %>% 
     inner_join(questions) %>%
     filter(type == "mc") %>%
     mutate(question_id = paste0(question_id, "-", value)) %>%
-
     
 population <- survey %>% 
     inner_join(questions, by=c("question_id")) %>%
     mutate(wrote = ifelse(response_id %in% wrote_participants$response_id, 1, 0)) %>%
     group_by(question_id) %>%
-
-    
     group_split() %>%
     lapply(function(df) {
         is_mc <- df$type == "mc"

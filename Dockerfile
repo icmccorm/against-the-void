@@ -1,4 +1,4 @@
-FROM rocker/verse:4.3.1 AS base
+FROM rocker/verse:4.4.1 AS base
 WORKDIR /usr/src/void
 COPY . .
 FROM base as setup

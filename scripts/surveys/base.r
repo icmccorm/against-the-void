@@ -16,15 +16,9 @@ sessionInfo()
 loadfonts(quiet = TRUE)
 options(vsc.plot = FALSE)
 
-
-
-
 is.yes <- function(x) {
     return(x == "Yes")
 }
-
-
-
 
 ACM_PAGE_WIDTH <- 5.497527778
 ACM_COL_WIDTH <- ACM_PAGE_WIDTH / 2
