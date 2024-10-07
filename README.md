@@ -1,5 +1,6 @@
-# An Interview and Survey Study on How Rust Developers Use Unsafe Code - Replication Package
-This is the replication package for the paper 'An Interview and Survey Study of How Rust Developers Use Unsafe Code.' All direct (e.g. names, institutions) and indirect (positions, projects) identifying information from participants has been redacted following procedures approved by our institution's IRB. 
+# A Mixed-Methods Study on the Implications of Unsafe Rust for Interoperation, Encapsulation, and Tool Design
+This is the replication package for our mixed-methods study on how Rust developers use `unsafe` code. All direct (e.g. names, institutions) and indirect (positions, projects) identifying information from participants has been redacted following procedures approved by our institution's IRB. 
+The [Appendix](https://github.com/icmccorm/unsafe-study/blob/main/appendix.pdf) contains a complete copy of each survey, the interview protocol, consent scripts, and the materials we used for calculating interrater reliability when refining our codebook.
 
 This dataset contains the following
 ```
@@ -11,7 +12,6 @@ This dataset contains the following
 - scripts                   // R and Python scripts that compile survey data       
 - appendix.pdf         
 ```
-The Appendix is provided as [appendix.pdf](https://github.com/icmccorm/against-the-void/blob/main/appendix.pdf). It contains a complete copy of each survey, the interview protocol, consent scripts, and the materials we used for calculating interrater reliability when refining our codebook.
 
 ## Building
 Executing `make build` will compile our raw data into the tables and figures present in our paper and its appendix. This script requires R version 4.3.1 and Python 3. Alternatively, if you are running Docker on an x86 system, you can create an image with a build of our project by executing `docker build .` from the root directory. This image includes all necessary dependencies and builds the project automatically as its final step.
@@ -61,4 +61,4 @@ Each question in the screening and community surveys is identified by a unique I
         |- code_mapping.csv
         |- theme_mapping.csv
 ```
-To refine our codebook, we conducted 7 rounds of coding random samples of quotes and we calculated interrater reliability after each round. Coding decisions were made using an online form. Data for each round are contained in the [irr](https://github.com/icmccorm/against-the-void/tree/main/data/irr) directory in subdirectories numbered 1 through 7. Each subdirectory contains 3 files. The file [survey.csv](https://github.com/icmccorm/against-the-void/blob/main/data/irr/1/survey.csv) contains the codes presented by the form for each coder to select during that round, while [data.csv](https://github.com/icmccorm/against-the-void/blob/main/data/irr/1/data.csv) contains the selections made by each coder for each quote in [output.md](https://github.com/icmccorm/against-the-void/blob/main/data/irr/1/output.md).
+We used interrater reliability as a mechanism for refining our codebook. We recorded coding decisions using an online form. The responses for each round are provided in the [irr](https://github.com/icmccorm/unsafe-study/tree/main/data/irr) directory within subdirectories numbered 1 through 7. Each subdirectory contains 3 files. The file [survey.csv](https://github.com/icmccorm/unsafe-study/blob/main/data/irr/1/survey.csv) contains the codes presented by the form for each coder to select during that round, while [data.csv](https://github.com/icmccorm/unsafe-study/blob/main/data/irr/1/data.csv) contains the selections made by each coder for each quote in [output.md](https://github.com/icmccorm/unsafe-study/blob/main/data/irr/1/output.md). In Section 5 of the Appendix, we describe this process in further detail and provide copies of the forms used for each round. 
